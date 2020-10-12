@@ -1,0 +1,119 @@
+/****general****/
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+title{
+	display: none;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+
+/****header****/
+
+header {
+	background-color: lightpink;
+	height: 25%;
+}
+
+.headSup{
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav{
+	background-color: mediumseagreen;
+	flex-direction: row;
+}
+
+.menu{
+	flex-direction: row;
+}
+
+/****main****/
+
+main {
+	background-color: khaki;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.mainCarousel{
+	background-color: white;
+	width: 70%;
+}
+
+.mainGaleria{
+	background-color: grey;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.divMainGaleria{
+	background-color: orangered;
+}
+
+.mainPromociones{
+	background-color: grey;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.divPromociones{
+	background-color: slateblue;
+
+}
+
+.mainPagos{
+	background-color: grey;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 70%;
+}
+
+.divMainPagos{
+	background-color: greenyellow;
+
+}
+
+/****footer****/
+
+footer {
+	background-color: lightseagreen;
+	height: 25%;
+	justify-content: space-between;
+
+}
+
+.divSup{
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#divContacto{
+	background-color: gold;
+}
+
+#divMapaSitio{
+	background-color: gold;
+}
+
+.copyright{
+	background-color: red;
+}
+
+.copyright p {
+	flex-direction: row;
+}
