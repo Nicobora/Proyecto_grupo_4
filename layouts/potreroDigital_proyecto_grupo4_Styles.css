@@ -15,6 +15,7 @@ title{
 html,body{
 	width: 100%;
 	height: 100%;
+	font-family: sans-serif;
 }
 
 
@@ -27,14 +28,18 @@ header {
 	text-align: center;
 }
 
-.headSup{
+.header_Sup{
 	flex-direction: row;
 	justify-content: space-between;
 	height: 60%;
 }
 
+
+/*Incio-Registrar*/
+
 .menuInicio{
-	width: 10%;
+	width: 15%;
+	justify-content: space-around;
 }
 
 .menuInicio li>a {
@@ -44,48 +49,78 @@ header {
 	margin: 5px;
 }
 
+/*logo*/
+
 .logo{
 	background-color: coral;
 	width: 30%;
 	margin: 5px;
 }
 
-.divDer{
-	width: 10%;
-}
+/*Menu Carrito*/
 
-.divDer button {
-	background-color: mediumpurple;
+.menuCarrito{
+	justify-content: space-around;
+	width: 15%;
 	margin: 5px;
+
 }
 
-.divDer button a {
+/*carrito*/
+
+#carrito {
+	margin: 5px;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: mediumpurple;
 }
 
-#buscador {
+/*buscador*/
+
+.buscador {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	background-color: rebeccapurple;
-	margin: 5px;
-	color: #FFFFFF;
+	border-radius: 40px;	
+}
+
+#input_Buscador {
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	transition: 0.4s;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+#btn_Buscador{
+	border-radius: 50%;
+	border:none;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height:20px;
+	transition: 0.4s;
 }
 
 /*navbar*/
 
 nav{
 	background-color: mediumseagreen;
+	justify-content: center;
 	height: 25%;
+	width: 100%;
 }
 
 .menuNavbar{
 	flex-direction: row;
 	justify-content: space-around;
 	list-style:none;
+	width: 100%;
 }
 
 .menuNavbar li>a {
-	padding: 15px;
-	display: block;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #FFFFFF;
@@ -185,7 +220,7 @@ footer {
 	justify-content: space-between;
 }
 
-#divSup{
+.footer_div{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
@@ -193,13 +228,16 @@ footer {
 	width: 100%;
 }
 
-#divSup div {
+.footer_div div {
 	height: 80%;
 	width: 10%;
+	font-size: 15px;
 }
 
 #divContacto{
 	background-color: gold;
+	width: 15%;
+	font-size: 13px;
 }
 
 #divMapaSitio{
@@ -214,13 +252,31 @@ footer {
 	background-color: lightgrey;
 }
 
+
+/*Copyright*/
+
 .copyright{
 	background-color: red;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 20%;
+	width: 100%;
+	padding: 0 10px;
 }
 
 .copyright p {
 	flex-direction: row;
-	height: 15%;
-	width: 100%;
+	font-size: 11px;
+	color: #ffffff;
+}
 
+#irArriba{
+	font-size: 30px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#irArriba:hover {
+	color: #000000;
 }

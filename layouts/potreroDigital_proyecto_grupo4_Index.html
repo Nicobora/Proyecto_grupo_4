@@ -4,22 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_Styles.css">
+
+	<script src="https://kit.fontawesome.com/c263c16c4e.js" crossorigin="anonymous"></script>
+
 	<title></title>
 </head>
 <body>
 	
 	<header>
 
-		<div class="headSup">
+		<div class="header_Sup">
 			<ul class="menuInicio">
 					<li><a href="#">Registrarse</a></li>
 					<li><a href="#">Iniciar Sesion</a></li>
 			</ul>
 			<div class="logo">LOGO</div>
-			<div class="divDer">
-				<button><a href="#">Mi Carrito</a></button>
-				<div id="buscador">
-					Buscador
+			<div class="menuCarrito">
+				<a id="carrito" href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
+				<div class="buscador">
+					<input  id="input_Buscador" type="search" placeholder="Buscar"/>
+					<button id="btn_Buscador"><i class="fas fa-search"></i></button>
 				</div>
 			</div>
 		</div>
@@ -77,8 +81,9 @@
 
 	<footer>
 		
-		<div id="divSup">
+		<div class="footer_div">
 			<div id="divContacto">
+				<h4>Nombre de la Empresa</h4>
 				<p>Direccion:</p>
 				<p>Teléfono:</p>
 				<p>E-mail:</p>
@@ -99,7 +104,8 @@
 		</div>
 		
 		<div class="copyright">
-			<p>&copy; 2020 <strong><span>NOMBRE DE LA EMPRESA</span></strong>. Todos los derechos reservados.</p>
+			<p>&copy; 2020-<strong><span>NOMBRE DE LA EMPRESA</span></strong>. Todos los derechos reservados.</p>
+			<a id="irArriba" href="#"> <i class="far fa-arrow-alt-circle-up"></i></a>
 		</div>
 
 	</footer>
