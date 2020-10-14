@@ -110,7 +110,7 @@ header {
 /*navbar*/
 
 nav{
-	background-color: mediumseagreen;
+	background-color: #5ed19b;
 	justify-content: center;
 	height: 25%;
 	width: 100%;
@@ -151,7 +151,7 @@ nav{
 /****main****/
 
 main {
-	height: 200vh;
+	height: 250vh;
 	justify-content: space-around;
 	align-items: center;
 	text-align: center;
@@ -187,35 +187,46 @@ main .galeria {
 	width: 70%;
 }
 
-#mainDestacados img{
+.galeriaDestacados {
+	width: 210px;
+	height: 210px;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.galeriaDestacados:hover {
+	background-color: grey;
+	transition: 0.4s;
+	opacity:1;
+}
+
+.galeriaDestacados img{
 	width: 200px;
 	height: 200px;
 }
 
-
 #mainPromociones{
-	background-color: lightgrey;
-	width: 70%;
-	height: 20%;
-}
-
-.divPromociones{
-	background-color: #ffffff;
-	height: 80%;
-	width: 30%;
-
-}
-
-#mainPagos{
 	background-color: lightgrey;
 	width: 70%;
 	height: 15%;
 }
 
-.divMainPagos{
+.divPromociones{
 	background-color: #ffffff;
-	height: 80%;
-	width: 30%;
+	height: 60%;
+	width: 20%;
+}
+
+#mainPagos{
+	background-color: lightgrey;
+	width: 70%;
+	height: 20%;
+}
+
+.divMainPagos img{
+	width: 180px;
+	height: 180px;
 }
 
 
@@ -223,7 +234,7 @@ main .galeria {
 
 footer {
 	background-color: #f04f43;
-	height: 45vh;
+	height: 40vh;
 	justify-content: space-between;
 }
 
@@ -242,21 +253,37 @@ footer {
 }
 
 #divContacto{
-	background-color: lightgrey;
+	background-color: #ffffff;
 	width: 15%;
 	font-size: 13px;
 }
 
 #divMapaSitio{
-	background-color: lightgrey;
+	background-color: #ffffff;
+	padding: 10px ;
 }
 
+#divMapaSitio a {
+	text-decoration: none;
+	color: #000000;
+	padding-top: 10px;
+}
+
+
 #divRedesSociales {
-	background-color: lightgrey;
+	justify-content: space-around;
+	align-items: center;
+	background-color:#ffffff;
+	
+}
+
+#divRedesSociales a {
+	text-decoration: none;
+	color:#3ba372;
 }
 
 #divNewsletter{
-	background-color: lightgrey;
+	background-color: #ffffff;
 }
 
 /*Copyright*/
