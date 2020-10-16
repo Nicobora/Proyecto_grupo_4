@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_InicioSesion.css">
+
+	<script src="https://kit.fontawesome.com/c263c16c4e.js" crossorigin="anonymous"></script>
+
+	<title></title>
+</head>
+<body>
+
+	<header>
+
+		<div class="header_Sup">
+			<ul class="menuInicio">
+					<li><a href="#">Registrarse</a></li>
+					<li><a href="#">Iniciar Sesion</a></li>
+			</ul>
+			<div class="logo">
+				<img src="images/logo5.png">
+			</div>
+			<div class="menuCarrito">
+				<a id="carrito" href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
+				<div class="buscador">
+					<input  id="input_Buscador" type="search" placeholder="Buscar"/>
+					<button id="btn_Buscador"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
+		</div>
+
+		<nav>
+			<ul class="menuNavbar">
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Productos</a>
+					<ul class="subMenuNavbar">
+						<li> <a href="#">X</a></li>
+						<li> <a href="#">X</a></li>
+						<li> <a href="#">X</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Quienes Somos</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main>
+
+	<div class="container">
+		<form class="sesion" action="index.html" method="post">
+      <h2>INICIO SESION</h2>
+
+			<label for="user" class="campo">Ingresa tu e-mail</label>
+			<input type="text" name="user">
+
+			<label for="password" class="campo">Ingresa tu contraseña</label>
+			<input type="password" name="password">
+		</form>
+
+		<a class="contraseña" href="Index.html">¿Olvidaste tu contraseña?</a>
+
+		<button type="button" name="Iniciar">Iniciar sesion</button>
+
+		<h4 id="Registro">¿No tenes cuenta? <a href="Index.html">Registrate</a></h4>
+
+	</div>
+
+	</main>
+
+	<footer>
+
+		<div class="footer_div">
+			<div id="divContacto">
+				<h4>Nombre de la Empresa</h4>
+				<p>Direccion:</p>
+				<p>Teléfono:</p>
+				<p>E-mail:</p>
+			</div>
+			<div id="divMapaSitio">
+				<ul >
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Productos</a></li>
+					<li><a href="#">Quienes Somos</a></li>
+					<li><a href="#">Contacto</a></li>
+			</ul>
+			</div>
+			<div id="divRedesSociales">
+				<a href="http://www.facebook.com"> <i class="fab fa-facebook fa-2x"></i></a>
+				<a href="http://www.twitter.com"> <i class="fab fa-twitter fa-2x"></i></a>
+				<a href="http://www.Instagram.com"> <i class="fab fa-instagram fa-2x"></i></a>
+			</div>
+			<div id="divNewsletter">
+				NEWSLETTER
+			</div>
+		</div>
+
+		<div class="copyright">
+			<p>&copy; 2020-<strong><span>NOMBRE DE LA EMPRESA</span></strong>. Todos los derechos reservados.</p>
+			<a id="irArriba" href="#"> <i class="far fa-arrow-alt-circle-up"></i></a>
+		</div>
+
+	</footer>
+</body>
+</html>
