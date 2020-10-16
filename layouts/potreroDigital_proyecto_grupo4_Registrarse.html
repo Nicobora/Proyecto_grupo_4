@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_InicioSesion.css">
+	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_Registrarse.css">
 
 	<script src="https://kit.fontawesome.com/c263c16c4e.js" crossorigin="anonymous"></script>
 
@@ -50,21 +50,50 @@
 	<main>
 
 	<div class="container">
-		<form class="sesion" action="index.html" method="post">
-      <h2 id="iniciar">INICIO SESION</h2>
+		<h2>CREAR CUENTA</h2>
 
-			<label for="user" class="campo">Ingresa tu e-mail</label>
-			<input type="text" name="user">
+		<form class="formulario" action="index.html" method="post">
 
-			<label for="password" class="campo">Ingresa tu contraseña</label>
-			<input type="password" name="password">
+			<label for="user">NOMBRE</label>
+			<input type="text" name="user" class="campo">
+
+			<label for="subname">APELLIDO</label>
+			<input type="text" name="subname" class="campo">
+
+			<label for="email">CORREO ELECTRONICO</label>
+			<input type="text" name="email" class="campo">
+
+			<div class="direccion">
+				<div id="campo1">
+					<label for="adress">DIRECCION</label>
+					<input type="text" name="adress" class="campo">
+				</div>
+         <div id="campo2">
+					 <label for="cod">CODIGO POSTAL</label>
+					 <input type="text" name="cod" class="campo">
+         </div>
+			</div>
+
+			<label for="tel">TELEFONO</label>
+			<input type="text" name="tel" class="campo">
+
+			<label for="password">CONTRASEÑA</label>
+			<input type="password" name="password" class="campo">
 		</form>
 
-		<a class="contraseña" href="Index.html">¿Olvidaste tu contraseña?</a>
+		<div class="notificaciones">
+			<h4>DESEO RECIBIR NOTIFICACIONES DE PROMOCIONES Y NOVEDADES</h4>
+			<button type="button" name="button" class="boton1">SI</button>
+			<button type="button" name="button" class="boton1">NO</button>
+		</div>
 
-		<button type="button" name="Iniciar">Iniciar sesion</button>
-
-		<h4 id="Registro">¿No tenes cuenta? <a href="potreroDigital_proyecto_grupo4_Registrarse.html">Registrate</a></h4>
+		<div class="terminos">
+			<h5>He leido y acepto los <a href="Index.html">Terminos y Condiciones</a> acerca del uso del servicio</h5>
+			<button type="button" name="button"></button>
+		</div>
+    <div id="boton2">
+  	<button type="button" name="button" id="registro">REGISTRARSE</button>
+    </div>
 
 	</div>
 
