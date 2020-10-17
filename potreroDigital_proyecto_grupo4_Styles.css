@@ -39,10 +39,16 @@ header {
 }
 .menuInicio li>a {
     text-decoration: none;
-    color: #000000;
-    background-color: lightgrey;
-    margin: 5px;
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    margin: 5px 5px 0 30px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: bold;
+    width: 60%;
 }
+
 /*logo*/
 
 .logo {
@@ -59,14 +65,15 @@ header {
 .menuCarrito {
     justify-content: space-around;
     width: 15%;
-    margin: 5px;
-}
+  }
+
 /*carrito*/
 
 #carrito {
-    margin: 5px;
     text-decoration: none;
-    color: #f04f43;
+    color: #11cbd7;
+    margin: 10px 5px 0;
+
 }
 /*buscador*/
 
@@ -74,8 +81,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background-color: #eaeaea;
     border-radius: 40px;
+    margin: 0 5px;
 }
 #input_Buscador {
     border: none;
@@ -95,39 +103,44 @@ header {
     height: 20px;
     transition: 0.4s;
 }
+
 /*navbar*/
 
-nav {
-    background-color: #5ed19b;
-    justify-content: center;
-    height: 25%;
-    width: 100%;
-}
 .menuNavbar {
     flex-direction: row;
     justify-content: space-around;
+    background-color: #fa4659;
     list-style: none;
-    width: 100%;
-}
+ }
+
 .menuNavbar li>a {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
+    padding: 8px;
+    display: block;
 }
+
 .menuNavbar li a:hover {
+	background-color: #3a4750;
     opacity: 0.7;
     transition: .4s;
     color: #000000;
 }
+
 .menuNavbar>li>ul {
     display: none;
 }
+
 .menuNavbar li:hover>ul {
-    display: block;
+  	display: block;
 }
+
+/* SubMenu */
 .subMenuNavbar {
-    position: absolute;
-    list-style: none
+	position: absolute;
+    list-style: none;
+    background-color: #3a4750;
 }
 
 /****main****/
@@ -148,6 +161,7 @@ main {
     height: 15%;
     justify-content: center;
 }
+
 .galeria {
     flex-direction: row;
     justify-content: space-around;
@@ -163,11 +177,15 @@ main {
     height: auto;
     width: 100%;
 }
-#mainCarousel img {
+
+.imagenCarousel {
     width: auto;
     height: 400px;
 }
 
+.indicador {
+	flex-direction: row;
+}
 /*destacados*/
 #mainDestacados {
     background-color: lightgrey;
@@ -175,11 +193,12 @@ main {
     width: 70%;
 }
 .galeriaDestacados {
-    width: 210px;
-    height: 210px;
     background-color: white;
     align-items: center;
     justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 10px;
 }
 .galeriaDestacados:hover {
     background-color: grey;
@@ -187,8 +206,9 @@ main {
     opacity: 1;
 }
 .galeriaDestacados img {
-    width: 200px;
-    height: 200px;
+	box-sizing: content-box;
+    width: 90%;
+    height: 90%;
 }
 
 /*promociones*/
@@ -198,9 +218,12 @@ main {
     width: 70%;
 }
 .divPromociones {
+	align-items: center;
+    justify-content: center;
     background-color: #ffffff;
-    width: 200px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
+    margin: 10px;
 }
 /*pagos*/
 #mainPagos {
@@ -208,15 +231,22 @@ main {
     height:20%;
     width: 70%;
 }
+
+.divMainPagos {
+	align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
 .divMainPagos img {
-    width: 180px;
-    height: 180px;
+    width: 70%;
+    height: 80%;
 }
 
 /****footer****/
 
 footer {
-    background-color: #f04f43;
+    background-color: #3a4750;
     height: 40vh;
     justify-content: space-between;
 }
@@ -234,53 +264,63 @@ footer {
 .footer_div div {
     height: 80%;
     width: 10%;
-    font-size: 15px;
 }
+
+.footer_div h5 {
+    
+}
+
 
 /*contacto*/
 
 #divContacto {
-    background-color: #ffffff;
-    width: 15%;
-    font-size: 13px;
+	color: #ffffff;
+	padding: 10px;
+    width: 20%;
+    font-size: 12px;
 }
 
 /*mapa de sitio*/
 
 #divMapaSitio {
-    background-color: #ffffff;
     padding: 10px;
+    color: #ffffff;
 }
 
 #divMapaSitio a {
     text-decoration: none;
-    color: #000000;
-    padding-top: 10px;
-}
+	color: #ffffff;
+    padding: 5px 0 0 5px;
+   }
 
 /* redes sociales */
 
 #divRedesSociales {
     justify-content: space-around;
     align-items: center;
-    background-color: #ffffff;
-}
+    color: #ffffff;
+    padding: 10px;
+    width: 20%;
+  }
 
 #divRedesSociales a {
     text-decoration: none;
-    color: #3ba372;
+    color: #11cbd7;
+    padding: 5px 0 0 5px;
 }
 
 /*newsletter*/
 
 #divNewsletter {
-    background-color: #ffffff;
+	color: #ffffff;
+	padding: 10px;
+
 }
 
 /**Copyright**/
 
 .copyright {
-    background-color: grey;
+    background-color:  #fa4659;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -292,6 +332,7 @@ footer {
     flex-direction: row;
     font-size: 11px;
     color: #ffffff;
+    margin:0;
 }
 #irArriba {
     font-size: 30px;
