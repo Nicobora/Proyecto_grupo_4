@@ -14,107 +14,145 @@
 </head>
 <body>
 	
-	<header>
+<header>
 
-		<div class="header_Sup">
-			<ul class="menuInicio">
-					<li><a href="#">Registrarse</a></li>
-					<li><a href="#">Iniciar Sesion</a></li>
-			</ul>
-			<div class="logo">
-				<img src="images/logo5.png">
-			</div>
-			<div class="menuCarrito">
-				<a id="carrito" href="#"><i class="fas fa-shopping-cart fa-lg"></i></a>
-				<div class="buscador">
-					<input  id="input_Buscador" type="search" placeholder="Buscar"/>
-					<button id="btn_Buscador"><i class="fas fa-search"></i></button>
+		<div class="headerContainer">
+			<div class="header_Sup">
+				<ul class="menuInicio">
+						<li><a href="potreroDigital_proyecto_grupo4_Registrarse.html">Registrarse</a></li>
+						<li><a href="potreroDigital_proyecto_grupo4_InicioSesion.html">Iniciar Sesion</a></li>
+				</ul>
+				<div class="logo">
+					<img src="images/logo5.png">
+				</div>
+				<div class="menuCarrito">
+					<a id="carrito" href="potreroDigital_proyecto_grupo4_InicioSesion.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+					<div class="buscador">
+						<input  id="input_Buscador" type="search" placeholder="Buscar"/>
+						<button id="btn_Buscador"><i class="fas fa-search"></i></button>
+					</div>
 				</div>
 			</div>
+
+			<nav>
+				<ul class="menuNavbar">
+					<li><a href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a>
+						<ul class="subMenuNavbar">
+							<li> <a href="potreroDigital_proyecto_grupo4_Productos-Baño.html">Baño</a></li>
+							<li> <a href="potreroDigital_proyecto_grupo4_Productos-Cocina.html">Cocina</a></li>
+							<li> <a href="potreroDigital_proyecto_grupo4_Productos-Electronica.html">Electronica</a></li>
+						</ul>
+					</li>
+					<li><a href="potreroDigital_proyecto_grupo4_QuienesSomos.html">Quienes Somos</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
 		</div>
-
-		<nav>
-			<ul class="menuNavbar">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Productos</a>
-					<ul class="subMenuNavbar">
-						<li> <a href="#">Baño</a></li>
-						<li> <a href="#">Cocina</a></li>
-						<li> <a href="#">Electronica</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Quienes Somos</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav>
-
-		<div class="breadcrumb">
-		<nav>
-			<ol class="breadcrumb">
-				<li > <a href="index.html">Inicio</a></li>
-				<li >Producto</li>
-				<li >DetalleProducto</li>
-			</ol>
-		</nav>
 		
 	</header>
 
 	<main>
 
-		<div class="contenedor">
+		<div class="contenedorDetalleProducto">
 
-			<div>
-					<div>
-						<img src="">
-					</div>
-					<div>
-						<p></p>
-						<p></p>
-						<label></label>
-						<button></button>
-					</div>
+			<div class="divBreadcrumb">
+				<ul class="menuBreadcrumb">
+					<li><a href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a></li>
+					<span>/</span>
+					<li>Detalle del Producto</li>
+				</ul>
 			</div>
+			
+			<div class="divProducto">
 
-			<div>
-				<p>
+				<div class="detalleProducto">
+					<div class="imagenesProducto">
+						<img src="images/productos/producto1.jpg">
+					</div>
 					
-				</p>
-			</div>
-		</div>
+					<div class="datosProducto">
+						<h2>NOMBRE DEL PRODUCTO</h2>
+						<p>$$$PRECIO</p>
+						<div class="form-group">
+						    <select class="form-control" id="exampleFormControlSelect1">
+						      <option>1</option>
+						      <option>2</option>
+						      <option>3</option>
+						      <option>4</option>
+						      <option>5</option>
+						    </select>
+						 </div>
+						<button>Agregar al Carrito</button>
+					</div>
 
+				</div>
+
+				<div class="descripcionProducto">
+					<p>
+					MINI CONSOLA GAME BOY 300 JUEGOS!!!
+					Consola de juegos portátil 300 en 1 - Reviví los mejores juegos!!!
+					Puedes jugar juegos en cualquier lugar y en cualquier momento.
+					Consola de juegos 300, incorporados, de alta generación (Mario Bross-Pacman- Bomberman-Galaxy entre otros).
+					Es un regalo para los niños, y puedes divertirte con ellos.
+					Colores: negro, blanco, rojo y azul ( SUJETOS A DISPONIBILIDAD)
+					Nota: CARGAR 4 HORAS ANTES DE USAR.
+					Pantalla grande de 3.0 "
+					Juegos incorporados 300
+					Batería de Litio recargable por USB
+					Modelo Sup 300 in 1
+
+					La Caja Incluye:
+					- Consola 300 juegos
+					- Bateria
+					- Guía manual
+					-Cable de carga USB
+					-Cable de TV.
+					</p>
+				</div>
+
+			</div>
+		
+		</div>
+	
 	</main>
 
-	<footer>
+		<footer>
 		
 		<div class="footer_div">
 			<div id="divContacto">
 				<h6>THE FLEX BOX</h6>
-				<p>Direccion: Av. Rivadavia 5500 - CABA</p>
-				<p>Teléfono: 4552-0099</p>
-				<p>E-mail: info@theflexbox.com.ar</p>
+				<ul class="infoContacto"> 
+					<li><i class="fas fa-map-marker-alt"></i>Direccion: Callefalsa 123 - CABA</li>
+					<li><i class="fas fa-phone-alt"></i>Teléfono: 0303-456</li>
+					<li><i class="fas fa-envelope"></i>E-mail: info@theflexbox.com.ar</li>
+				</ul>
 			</div>
+
 			<div id="divMapaSitio">
 				<h6>MAPA DE SITIO</h6>
 				<ul >
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Productos</a></li>
-					<li><a href="#">Quienes Somos</a></li>
-					<li><a href="#">Contacto</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_QuienesSomos.html">Quienes Somos</a></li>
+					<li><a href="potreroDigital_proyecto_grupo4_Contacto.html">Contacto</a></li>
 				</ul>
 			</div>
+
 			<div id="divRedesSociales">
 				<h6>REDES SOCIALES</h6>
 				<a href="http://www.facebook.com"> <i class="fab fa-facebook fa-2x"></i></a>
 				<a href="http://www.twitter.com"> <i class="fab fa-twitter fa-2x"></i></a>
 				<a href="http://www.Instagram.com"> <i class="fab fa-instagram fa-2x"></i></a>
 			</div>
+
 			<div id="divNewsletter">
 				<h6>NEWSLETTER</h6>
 			</div>
 		</div>
 		
 		<div class="copyright">
-			<p>&copy; 2020-<strong><span>NOMBRE DE LA EMPRESA</span></strong>. Todos los derechos reservados.</p>
+			<p>&copy; 2020-<strong>THE FLEX BOX</strong>. Todos los derechos reservados.</p>
 			<a id="irArriba" href="#"> <i class="far fa-arrow-alt-circle-up"></i></a>
 		</div>
 
