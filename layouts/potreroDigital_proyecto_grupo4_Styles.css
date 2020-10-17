@@ -19,7 +19,7 @@ body {
 
 /****header****/
 
-header {
+.headerContainer {
     justify-content: space-around;
     height: 30vh;
     text-align: center;
@@ -113,6 +113,10 @@ header {
     list-style: none;
  }
 
+.menuNavbar ul {
+    margin: 0;
+}
+
 .menuNavbar li>a {
     text-decoration: none;
     text-transform: uppercase;
@@ -143,18 +147,16 @@ header {
     background-color: #3a4750;
 }
 
+/************************************INDEX************************************/
+
 /****main****/
 
-main {
-    height: 250vh;
+.contenedorIndex {
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+    height: 220vh;
     text-align: center;
- }
-
-.contenedores {
-	 justify-content: space-around;
-	 align-items: center;
-	 height: 100%;
-	 width: 100%;
 }
 
 .h3 {
@@ -342,3 +344,47 @@ footer {
 #irArriba:hover {
     color: #000000;
 }
+
+/************************************CONTACTO************************************/
+
+/****main****/
+
+.contenedorContacto {
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 130vh;
+}
+
+/**breadcrumb**/
+
+.breadcrumb{
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 5%;
+}
+
+.menuBreadcrumb{
+    flex-direction: row; 
+}
+
+.menuBreadcrumb li {
+    padding: 0 5px;
+}
+
+
+
+/**Contacto**/
+
+.divContacto {
+    width: 80%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.divContacto h3 {
+    align-items: center;
+}
+
+.datosCOnt
