@@ -362,10 +362,10 @@ footer {
 /****main****/
 
 .contenedorContacto {
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
    width: 100%;
-   height: 150vh;
+   height: 120vh;
 }
 
 /**breadcrumb**/
@@ -394,33 +394,51 @@ footer {
     color: #000000;
 }
 
-
-
 /**Contacto**/
 
 .divContacto {
-    width: 70%;
-    height:95%;
     justify-content: space-around;
+    width: 70%;
+    height: 90%;
 }
 
 .divContacto h3 {
     align-items: center;
-    height: 10%;
 }
 
 /*Datos COntacto*/
 
 .datosContacto{
-    height: 30%;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 70%;
+}
+
+.datosContacto ul {
+    margin: 0 !important;
+}
+
+.datosContacto li {
+    flex-direction: row;
+    padding: 5px;
+}
+
+.datosContacto i {
+    padding: 3px 10px;
 }
 
 /**Formulario**/
 
 .formularioContacto {
-    flex-direction: space-around;
+    justify-content: space-around;
     height: 60%;
+}
 
+.divButton {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
 }
 
 .formularioContacto button {
@@ -428,4 +446,28 @@ footer {
     background-color: #11cbd7;
     border-radius: 6px;
     font-weight: bold;
+    width: 12%;
+    border:none;
+    align-items: center;
+    padding: 5px;
 }
+
+.formularioContacto label {
+    margin: 0 !important;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.formularioContacto input {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.divFormComentario {
+    align-items: center;
+}
+
+.divFormComentario label, textarea {
+    width: 90%;
+}
+
