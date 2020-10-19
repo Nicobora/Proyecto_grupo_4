@@ -226,6 +226,7 @@ body {
     height: 20%;
     width: 70%;
 }
+
 .divDestacados {
     background-color: #ffffff;
     align-items: center;
@@ -234,14 +235,22 @@ body {
     height: 80%;
     margin: 10px;
 }
+
+.divDestacados a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
 .divDestacados:hover {
     background-color: grey;
     transition: 0.4s;
     opacity: 1;
 }
 .divDestacados img {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
 }
 
 /*promociones*/
@@ -255,13 +264,19 @@ body {
     align-items: center;
     justify-content: center;
     margin: 10px;
+}
 
+.divPromociones a {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
 }
 
 .divPromociones img {
-    width: 90%;
-    height: 80%;
-    border: 5px dotted;
+    width: 100%;
+    height: 100%;
+    border: 5px dotted black;
 }
 
 /*pagos*/
