@@ -108,39 +108,50 @@ body {
 
 .menuNavbar {
     flex-direction: row;
-    justify-content: space-around;
     background-color: #fa4659;
     list-style: none;
+    height: 7vh;
  }
-
-.menuNavbar ul {
-    margin: 0;
-}
 
 .menuNavbar li>a {
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 8px;
-    display: block;
+}
+
+.menuNavbar li {
+    padding: 0 20px;
 }
 
 .menuNavbar li a:hover {
-	background-color: #3a4750;
+    background-color: #3a4750;
     opacity: 0.7;
     transition: .4s;
     color: #000000;
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+
+
+/*
+.menuNavbar ul {
+    margin: 0;
 }
 
 .menuNavbar>li>ul {
     display: none;
 }
 
-.menuNavbar li:hover>ul {
-  	display: block;
-}
 
-/* SubMenu */
+
 .subMenuNavbar {
 	position: absolute;
     list-style: none;
@@ -600,7 +611,6 @@ footer {
     height: 24%;
 }
 
-
 /*poducto de cada fila*/
 .producto {
     width: 23%;
@@ -614,4 +624,12 @@ footer {
 .producto img {
     width: 80%;
     height: 90%;
+}
+
+/************************************CATEGORIAS DE PRODUCTOS************************************/
+
+.grillaCatProducto {
+    height: 95%;
+    justify-content: flex-start;
+    margin-top: 30px;
 }
