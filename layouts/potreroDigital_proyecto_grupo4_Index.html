@@ -2,15 +2,19 @@
 <html lang="es-AR">
 <head>
 	<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>THE FLEX BOX</title>
+
+	<!-- Stlylesheet -->
 	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_Styles.css">
 
+	<!-- Font Awesome Iconos -->
 	<script src="https://kit.fontawesome.com/c263c16c4e.js" crossorigin="anonymous"></script>
 
-	 <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-	<title></title>
 </head>
 <body>
 	
@@ -23,7 +27,7 @@
 						<li><a href="potreroDigital_proyecto_grupo4_InicioSesion.html">Iniciar Sesion</a></li>
 				</ul>
 				<div class="logo">
-					<img src="images/logo5.png">
+					<a href="potreroDigital_proyecto_grupo4_Index.html"><img src="images/logo5.png"></a>
 				</div>
 				<div class="menuCarrito">
 					<a id="carrito" href="potreroDigital_proyecto_grupo4_InicioSesion.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
@@ -41,7 +45,7 @@
 			        <a class="nav-link" href="potreroDigital_proyecto_grupo4_Index.html">Inicio<span class="sr-only">(current)</span></a>
 			      </li>
 			      <li class="nav-item dropdown">
-			        <a class="nav-link "  href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a>
+			        <a class="nav-link" href="potreroDigital_proyecto_grupo4_Productos.html">Productos</a>
         			 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
 			          <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosBaño.html">Baño</a>
 			          <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosCocina.html">Cocina</a>
@@ -75,13 +79,13 @@
 			  </ol>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			     <img class="imagenCarousel" src="images/banners/bannerCocina.png" alt="Primer slide">
+			     <a href="potreroDigital_proyecto_grupo4_ProductosCocina.html"><img class="imagenCarousel" src="images/banners/bannerCocina.png" alt="Primer slide"></a>
 			    </div>
 			    <div class="carousel-item">
-			       <img class="imagenCarousel" src="images/banners/bannerBaño.png" alt="Segundo slide">
+			      <a href="potreroDigital_proyecto_grupo4_ProductosBaño.html"> <img class="imagenCarousel" src="images/banners/bannerBaño.png" alt="Segundo slide"></a>
 			    </div>
 			    <div class="carousel-item">
-			     <img class="imagenCarousel" src="images/banners/bannerElectro.png" alt="Tercer slide">
+			    <a href="potreroDigital_proyecto_grupo4_ProductosElectronica.html"> <img class="imagenCarousel" src="images/banners/bannerElectro.png" alt="Tercer slide"></a>
 			    </div>
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,34 +97,33 @@
 			    <span class="sr-only">Next</span>
 			  </a>
 			</div>
-
 		
 			<div id="mainDestacados">
 			<h3 class="h3">Productos destacados</h3>	
 				<div class="galeria">
-					<div class="galeriaDestacados"><img src="images/destacados/destacados1.jpg"></div>
-					<div class="galeriaDestacados"><img src="images/destacados/destacados2.jpg"></div>
-					<div class="galeriaDestacados"><img src="images/destacados/destacados3.jpg"></div>
-					<div class="galeriaDestacados"><img src="images/destacados/destacados4.jpg"></div>
+					<div class="divDestacados"><img src="images/destacados/destacados1.jpg"></div>
+					<div class="divDestacados"><img src="images/destacados/destacados2.jpg"></div>
+					<div class="divDestacados"><img src="images/destacados/destacados3.jpg"></div>
+					<div class="divDestacados"><img src="images/destacados/destacados4.jpg"></div>
 				</div>
 			</div>
 			
 			<div id="mainPromociones">
 				<h3 class="h3">¡Las mejores ofertas!</h3>	
 				<div class="galeria">
-					<div class="divPromociones">PROMO 1</div>
-					<div class="divPromociones">PROMO 2</div>
-					<div class="divPromociones">PROMO 3</div>
+					<div class="divPromociones"> <img src="images/promociones/promo1.png"></div>
+					<div class="divPromociones"> <img src="images/promociones/promo2.png"></div>
+					<div class="divPromociones"> <img src="images/promociones/promo3.png"></div>
 
 				</div>
 			</div>
 			
-			<div id="mainPagos">
+			<div id="mainPagosEnvios">
 				<h3 class="h3">Formas de pago y envios</h3>	
 				<div class="galeria">
-					<div class="divMainPagos"> <img src="images/envios/envios.png"></div>
-					<div class="divMainPagos"><img src="images/envios/compra.png"></div>
-					<div class="divMainPagos"><img src="images/envios/pagos.png"></div>
+					<div class="divPagosEnvios"> <img src="images/envios/envios.png"></div>
+					<div class="divPagosEnvios"><img src="images/envios/compra.png"></div>
+					<div class="divPagosEnvios"><img src="images/envios/pagos.png"></div>
 				</div>
 			</div>
 
@@ -158,7 +161,13 @@
 			</div>
 
 			<div id="divNewsletter">
-				<h6>NEWSLETTER</h6>
+				<section>
+					<form>
+						<h6>Suscribite a nuestro Newsletter</h6>
+						<input type="text" name="email" placeholder="Ingrese su email">
+						<input class="botonSuscribite" type="submit" value="Suscribite"> 
+					</form>
+				</section>
 			</div>
 		</div>
 		
