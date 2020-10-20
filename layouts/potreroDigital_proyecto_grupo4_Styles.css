@@ -135,7 +135,6 @@ body {
 }
 
 .dropdown>.dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
 
@@ -322,14 +321,6 @@ footer {
     width: 10%;
 }
 
-<<<<<<< HEAD
-.footer_div h5 {
-
-}
-
-
-=======
->>>>>>> 2350d2c9a178f388cae6930a1726df05730b85c4
 /*contacto*/
 
 #divContacto {
@@ -435,8 +426,7 @@ footer {
 #irArriba:hover {
     color: #000000;
 }
-<<<<<<< HEAD
-=======
+
 
 /************************************CONTACTO************************************/
 
@@ -803,4 +793,4 @@ footer {
     width: 30%;
     align-self: center;
 }
->>>>>>> 2350d2c9a178f388cae6930a1726df05730b85c4
+
