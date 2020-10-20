@@ -1,11 +1,11 @@
 /****general****/
 
-*{
-	margin:0;
-	padding: 0;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 title {
@@ -143,48 +143,12 @@ header {
     background-color: #3a4750;
 }
 
-
 /****main****/
 
 main {
-	height: 80vh;
-	justify-content: space-around;
-	align-items: center;
-	text-align: center;
-}
-.container{
-	background-color: yellow;
-	height: 100%;
-	width: 70%;
-	margin: 10px;
-	align-items: center;
-	justify-content: center;
-}
-#iniciar{
-	align-self:flex-start;
-}
-.contraseña{
-	text-decoration: none;
-	font-size: 13px;
-}
-#Registro{
-	flex-direction: row;
-	justify-content: center;
-}
-button{
-	width: 20%;
-	align-items: center;
-}
-h4 a{
-	margin: 0 2%;
-	text-decoration: none;
-}
-h4{
-	width: 30%;
-}
-.campo{
-	align-items: flex-start;
-}
+    height: 250vh;
+     }
+
 
 /****footer****/
 
