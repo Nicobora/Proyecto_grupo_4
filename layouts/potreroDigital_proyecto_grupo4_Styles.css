@@ -807,3 +807,154 @@ footer {
     align-self: center;
 }
 
+
+
+/************************************INICIAR SESION************************************/
+
+
+.container{
+    
+    height: 100%;
+    width: 70%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#iniciar{
+    align-self:flex-start;
+}
+
+.contraseña{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#Registro{
+    flex-direction: row;
+    justify-content: center;
+}
+
+button{
+    width: 20%;
+    align-items: center;
+}
+
+h4 a{
+    margin: 0 2%;
+    text-decoration: none;
+}
+h4{
+    width: 30%;
+}
+
+.campo{
+    align-items: flex-start;
+}
+
+
+/************************************REGISTRARSE************************************/
+
+.containerRegistrarse{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: grey;
+    height: 100%;
+    width: 70%;
+    justify-content: center;
+}
+
+.formulario{
+  align-items:flex-start;
+  width: 100%;
+  padding:0 3%;
+}
+
+.campo{
+  width: 100%;
+  height: 30px;
+}
+
+.direccion{
+  align-items: flex-start;
+  width: 100%;
+  flex-direction: row;
+}
+
+#campo1{
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 1;
+}
+
+#campo2{
+  width: 30%;
+  align-items: flex-start;
+  margin-left: 1%;
+}
+
+.notificaciones{
+  flex-direction: row;
+  width: 100%;
+  align-items:flex-start;
+  padding:0 3%;
+}
+
+.terminos{
+  flex-direction: row;
+  align-items:flex-start;
+  width: 100%;
+  padding:0 3%;
+}
+
+div h5{
+  flex-direction: row;
+}
+
+#registro{
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  height:30px;
+  background-color: green;
+}
+
+.boton1{
+  background-color: yellow;
+}
+
+#boton2{
+  width: 100%;
+  align-items: center;
+}
+
+
+/************************************TERMINOS Y CONDICIONES************************************/
+
+.containerTermsyCond {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 10px;
+}
+
