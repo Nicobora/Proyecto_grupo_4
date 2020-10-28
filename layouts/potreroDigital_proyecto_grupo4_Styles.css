@@ -440,88 +440,6 @@ footer {
     color: #000000;
 }
 
-
-/************************************CONTACTO************************************/
-
-.contenedorContacto {
-   justify-content: space-around;
-   align-items: center;
-   width: 100%;
-   height: 120vh;
-}
-
-/**Contacto**/
-
-.divContacto {
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    height: 90%;
-}
-
-.divContacto h3 {
-    align-items: center;
-}
-
-/*Datos Contacto*/
-
-.datosContacto{
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    width: 70%;
-}
-
-.datosContacto ul {
-    margin: 0 !important;
-}
-
-.datosContacto li {
-    flex-direction: row;
-    padding: 5px;
-}
-
-.datosContacto i {
-    padding: 3px 10px;
-}
-
-/**Formulario**/
-
-.formularioContacto {
-    justify-content: space-around;
-    height: 60%;
-    width: 70%
-}
-
-.formularioContacto label {
-    margin: 0 !important;
-    font-size: 15px;
-    padding-bottom: 5px;
-}
-
-.formularioContacto input {
-    font-size: 14px;
-    padding: 4px 0;
-}
-
-/*boton enviar*/
-
-.divButton {
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.formularioContacto button {
-    color: #f7f7f7;
-    background-color: #11cbd7;
-    border-radius: 6px;
-    font-weight: bold;
-    width: 12%;
-    border:none;
-    align-items: center;
-    padding: 5px;
-}
 /************************************PRODUCTOS************************************/
 
 .contenedorProductos{
@@ -728,6 +646,268 @@ footer {
     font-size: 14px;
 }
 
+/************************************INICIAR SESION************************************/
+
+
+.containerIniciarSesion{
+    
+    height: 100%;
+    width: 70%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#iniciar{
+    align-self:flex-start;
+}
+
+.contraseña{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#Registro{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerIniciarSesion button{
+    width: 20%;
+    align-items: center;
+}
+
+.containerIniciarSesion h4 a{
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+.containerIniciarSesion h4{
+    width: 30%;
+}
+
+.campo{
+    align-items: flex-start;
+}
+
+/************************************CONTACTO************************************/
+
+.contenedorContacto {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 120vh;
+}
+
+/**Contacto**/
+
+.divContacto {
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+}
+
+.divContacto h3 {
+    align-items: center;
+}
+
+/*Datos Contacto*/
+
+.datosContacto{
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 70%;
+}
+
+.datosContacto ul {
+    margin: 0 !important;
+}
+
+.datosContacto li {
+    flex-direction: row;
+    padding: 5px;
+}
+
+.datosContacto i {
+    padding: 3px 10px;
+}
+
+/**Formulario**/
+
+.formularioContacto {
+    justify-content: space-around;
+    height: 60%;
+    width: 70%
+}
+
+.formularioContacto label {
+    margin: 0 !important;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.formularioContacto input {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+/*boton enviar*/
+
+.divButton {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.formularioContacto button {
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 12%;
+    border:none;
+    align-items: center;
+    padding: 5px;
+}
+
+/************************************REGISTRARSE************************************/
+
+.containerRegistrarse{
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #DCDCDC;
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.containerRegistrarse h3 {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*Formulario*/
+
+.formularioReg{
+    align-items:flex-start;
+    width: 100%;
+    padding:0 3%;
+}
+
+.formularioReg label {
+    margin: 0;
+}
+
+.campoReg{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.direccionReg{
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+}
+
+#campo1{
+  width: 70%;
+  align-items: flex-start;
+  margin-left: 1;
+}
+
+#campo2{
+  width: 30%;
+  align-items: flex-start;
+  margin-left: 1%;
+}
+
+/*Terminos y Notificaciones*/
+
+.divTerminosNotif{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.notifyterminos {
+    font-size: 13px;
+    color: #000000;
+    flex-direction: row;
+    margin:0 30px;
+}
+
+.notifyterminos a {
+    color: black;
+    padding: 0 5px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.divCheck {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck label {
+    margin: 0 15px;
+    font-size: 13px;
+}
+
+
+/*Boton Registrarse*/
+.botonRegistrarse{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btnRegistro{
+    height:35px;
+    justify-content: center;
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    border-radius: 6px;
+    font-weight: bold;
+    border:none;
+    padding: 5px;
+}
+
+/************************************TERMINOS Y CONDICIONES************************************/
+
+.containerTermsyCond {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 10px;
+}
+
+
 /************************************ERROR 404************************************/
 
 #error404 {
@@ -806,155 +986,3 @@ footer {
     width: 30%;
     align-self: center;
 }
-
-
-
-/************************************INICIAR SESION************************************/
-
-
-.container{
-    
-    height: 100%;
-    width: 70%;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
-}
-
-#iniciar{
-    align-self:flex-start;
-}
-
-.contraseña{
-    text-decoration: none;
-    font-size: 13px;
-}
-
-#Registro{
-    flex-direction: row;
-    justify-content: center;
-}
-
-button{
-    width: 20%;
-    align-items: center;
-}
-
-h4 a{
-    margin: 0 2%;
-    text-decoration: none;
-}
-h4{
-    width: 30%;
-}
-
-.campo{
-    align-items: flex-start;
-}
-
-
-/************************************REGISTRARSE************************************/
-
-.containerRegistrarse{
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: grey;
-    height: 100%;
-    width: 70%;
-    justify-content: center;
-}
-
-.formulario{
-  align-items:flex-start;
-  width: 100%;
-  padding:0 3%;
-}
-
-.campo{
-  width: 100%;
-  height: 30px;
-}
-
-.direccion{
-  align-items: flex-start;
-  width: 100%;
-  flex-direction: row;
-}
-
-#campo1{
-  width: 70%;
-  align-items: flex-start;
-  margin-left: 1;
-}
-
-#campo2{
-  width: 30%;
-  align-items: flex-start;
-  margin-left: 1%;
-}
-
-.notificaciones{
-  flex-direction: row;
-  width: 100%;
-  align-items:flex-start;
-  padding:0 3%;
-}
-
-.terminos{
-  flex-direction: row;
-  align-items:flex-start;
-  width: 100%;
-  padding:0 3%;
-}
-
-div h5{
-  flex-direction: row;
-}
-
-#registro{
-  width: 20%;
-  align-items: center;
-  justify-content: center;
-  height:30px;
-  background-color: green;
-}
-
-.boton1{
-  background-color: yellow;
-}
-
-#boton2{
-  width: 100%;
-  align-items: center;
-}
-
-
-/************************************TERMINOS Y CONDICIONES************************************/
-
-.containerTermsyCond {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.containerTermsyCond h1{
-    text-align: center;
-    margin: 20px;
-}
-
-.containerTermsyCond h4{
-    width: auto;
-    text-align: center;
-}
-
-.containerTermsyCond p{
-    text-align: justify;
-    margin: 20px;
-}
-
-.containerTermsyCond h6{
-    text-align: justify;
-    margin: 10px;
-}
-

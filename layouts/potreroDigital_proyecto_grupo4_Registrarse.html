@@ -74,50 +74,62 @@
 	<main>
 
 	<div class="containerRegistrarse">
-		<h2>CREAR CUENTA</h2>
 
-		<form class="formulario" action="index.html" method="post">
+		<h3>CREAR CUENTA</h3>
 
-			<label for="user">NOMBRE</label>
-			<input type="text" name="user" class="campo">
+		<form class="formularioReg" action="index.html" method="post">
 
-			<label for="subname">APELLIDO</label>
-			<input type="text" name="subname" class="campo">
+			<label form="nombre">Nombre:</label>
+			<input type="text" name="user" class="campoReg" placeholder="Ingrese su nombre">
 
-			<label for="email">CORREO ELECTRONICO</label>
-			<input type="text" name="email" class="campo">
+			<label form="apellido">Apellido:</label>
+			<input type="text" name="user" class="campoReg" placeholder="Ingrese su apellido">
 
-			<div class="direccion">
+			<label form="email">Correo Electrónico:</label>
+			<input type="email" name="email" class="campoReg" placeholder="nombre@ejemplo.com">
+
+			<div class="direccionReg">
 				<div id="campo1">
-					<label for="adress">DIRECCION</label>
-					<input type="text" name="adress" class="campo">
+					<label form="direccion">Dirección:</label>
+					<input type="text" name="user" class="campoReg" placeholder="Ingrese su direccion">
 				</div>
-         <div id="campo2">
-					 <label for="cod">CODIGO POSTAL</label>
-					 <input type="text" name="cod" class="campo">
-         </div>
+		        <div id="campo2">
+					<label form="cp">Código Postal:</label>
+					<input type="text" name="cod" class="campoReg" placeholder="Ingrese su codigo postal">
+		        </div>
 			</div>
 
-			<label for="tel">TELEFONO</label>
-			<input type="text" name="tel" class="campo">
+			<label form="telefono">Teléfono:</label>
+			<input type="tel" name="tel"  class="campoReg" placeholder="(Código de área) Número">
 
-			<label for="password">CONTRASEÑA</label>
-			<input type="password" name="password" class="campo">
+			<label form="contraseña">Contraseña:</label>
+			<input type="password" name="password" class="campoReg" placeholder="Ingrese su contraseña">
 		</form>
 
-		<div class="notificaciones">
-			<h4>DESEO RECIBIR NOTIFICACIONES DE PROMOCIONES Y NOVEDADES</h4>
-			<button type="button" name="button" class="boton1">SI</button>
-			<button type="button" name="button" class="boton1">NO</button>
+		<div class="divTerminosNotif">
+			<h5 class="notifyterminos">DESEO RECIBIR NOTIFICACIONES DE PROMOCIONES Y NOVEDADES</h5>
+			<div class="divCheck">
+				<label>
+					<input type="checkbox" id="cbox1" value="first_checkbox"> SI
+				</label>
+				<label>
+					<input type="checkbox" id="cbox2" value="first_checkbox"> NO
+				</label>
+			</div>
 		</div>
 
-		<div class="terminos">
-			<h5>He leido y acepto los <a href="potreroDigital_proyecto_grupo4_TerminosCondiciones.html">Terminos y Condiciones</a> acerca del uso del servicio</h5>
-			<button type="button" name="button"></button>
+		<div class="divTerminosNotif">
+			<div class="divCheck">
+				<label> 
+					<input type="checkbox" id="cbox1" value="first_checkbox">
+				</label>
+			</div>
+			<h5 class="notifyterminos">He leido y acepto los <a href="potreroDigital_proyecto_grupo4_TerminosCondiciones.html">"Terminos y Condiciones"</a> acerca del uso del servicio</h5>
 		</div>
-    <div id="boton2">
-  	<button type="button" name="button" id="registro">REGISTRARSE</button>
-    </div>
+    
+	    <div class="botonRegistrarse">
+	  		<button type="button" name="button" id="btnRegistro">REGISTRARSE</button>
+	    </div>
 
 	</div>
 
