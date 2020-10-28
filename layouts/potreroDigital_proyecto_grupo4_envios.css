@@ -156,73 +156,162 @@ body {
 /************************************INDEX************************************/
 
 /****main****/
+/**breadcrumb**/
+
+.divBreadcrumb{
+    background-color: #eaeaea;
+    width: 90%;
+    height: 5%;
+    border-radius: 4px;
+}
+
+.menuBreadcrumb{
+    flex-direction: row;
+    margin: 0 !important;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.menuBreadcrumb li, span {
+    padding: 10px 2px;
+    justify-content: center;
+}
+
+.menuBreadcrumb a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Formulario */
+.divformenvios{
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px
+}
+
+form{
+width:50%;
+padding: 20px;
+border: 3em solid transparent;
+margin-bottom:0px;
+margin-left:16px;
+
+}
+fieldset
+{
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;
+  border:2px solid green;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+}
+
+.tipoenvio{
+  display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+}
 
 
-main {
-	height: 80vh;
-	justify-content: center;
-	align-items: center;
-  text-align: center;
+
+input:focus {
+  border: 2px solid #000;
+  background: #F3F3F3;
 }
-.containerRegistrarse{
-	background-color: grey;
-	height: 100%;
-	width: 80%;
-	justify-content: center;
+
+
+/*Campos*/
+
+#nombre{
+   border-radius: 5px;
+   background-color: #def;
 }
-.formulario{
-  align-items:flex-start;
-  width: 100%;
-  padding:0 3%;
+
+#apellido{
+  border-radius: 5px;
+  background-color: #def;
 }
-.campo{
-  width: 100%;
-  height: 30px;
+
+#dni{
+  border-radius: 5px;
+  background-color: #def;
 }
-.direccion{
-  align-items: flex-start;
-  width: 100%;
-  flex-direction: row;
+
+#telefono{
+  border-radius: 5px;
+  background-color: #def;
 }
-#campo1{
-  width: 70%;
-  align-items: flex-start;
-  margin-left: 1;
+
+#calle{
+  border-radius: 5px;
+  background-color: #def;
 }
-#campo2{
-  width: 30%;
-  align-items: flex-start;
-  margin-left: 1%;
+
+#numero{
+  border-radius: 5px;
+  background-color: #def;
 }
-.notificaciones{
-  flex-direction: row;
-  width: 100%;
-  align-items:flex-start;
-  padding:0 3%;
+
+#piso{
+  border-radius: 5px;
+  background-color: #def;
 }
-.terminos{
-  flex-direction: row;
-  align-items:flex-start;
-  width: 100%;
-  padding:0 3%;
+
+#dpto{
+  border-radius: 5px;
+  background-color: #def;
 }
-div h5{
-  flex-direction: row;
+
+#provincia{
+  border-radius: 5px;
+  background-color: #def;
 }
-#registro{
-  width: 20%;
-  align-items: center;
-  justify-content: center;
-  height:30px;
-  background-color: green;
+
+#ciudad{
+  border-radius: 5px;
+  background-color: #def;
 }
-.boton1{
-  background-color: yellow;
+
+/*Botones*/
+#flecha{
+			background: grey;
+			border-radius: 10%;
+			padding: .25em;
+      width: 10%;
+      position: relative;
+      left: -200px;
+      top: 1em;
+      margin-top: 1em;
+		}
+
+    input[type="submit"]{
+width:150px;
+padding:10px;
+border:none;
+border-radius:5px;
+background-color:#7C7B7B;
+font-size:20px;
+color:#fff;
+align-items: center;
+position: relative;
+left: 180px;
+top: 1em;
 }
-#boton2{
-  width: 100%;
-  align-items: center;
+
+.botones{
+flex-direction: row;
+ width: 100%;
+ align-items:flex-start;
 }
+
+.siguiente{
+  align-items: flex-end;
+}
+
+
 /****footer****/
 
 footer {
