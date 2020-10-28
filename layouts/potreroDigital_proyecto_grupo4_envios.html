@@ -64,7 +64,7 @@
 					</div>
 
 <div class="divformenvios">
-	<form action="potreroDigital_proyecto_grupo4_Pagos.html">
+	<form id="formenvio" action="potreroDigital_proyecto_grupo4_Pagos.html">
 		<div class="tipoenvio">
 		<fieldset>
      <legend>Envios a Domicilio</legend>
@@ -163,7 +163,7 @@
 		<img id="flecha" src="images\envios\flechita.png" alt="flecha"></a>
 
 <div class="siguiente">
-<input type="submit" value="Siguiente">
+<input id="siguiente" type="submit" value="Siguiente">
 </div>
 </div>
 	</form>
@@ -200,7 +200,13 @@
 			</div>
 
 			<div id="divNewsletter">
-				<h6>NEWSLETTER</h6>
+				<section>
+					<form>
+						<h6>Suscribite a nuestro Newsletter</h6>
+						<input id=inputEmail type="text" name="email" placeholder="Ingrese su email">
+						<input id="botonSuscribite" type="submit" value="Suscribite">
+					</form>
+				</section>
 			</div>
 		</div>
 

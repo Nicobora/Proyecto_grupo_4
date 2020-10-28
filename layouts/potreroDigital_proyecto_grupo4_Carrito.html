@@ -10,6 +10,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<link rel="icon" type="image/png" href="images/icono.png" />
+
 	<title>THE FLEX BOX</title>
 
 	<!-- Stlylesheet -->
@@ -84,22 +86,32 @@
 							<li>Carrito</li>
 						</ul>
 					</div>
-					<form action="potreroDigital_proyecto_grupo4_envios.html">
+
 <div>
 
 <h2>Carrito de compras</h2>
 
 <h4>Cantidad productos en el carrito 1</h4>
+
+<form id="producto1" action="potreroDigital_proyecto_grupo4_envios.html">
 <p><label>
-<img src="images\productos\zapatilla_universal.png" alt="zapatilla_universal"> Zapatilla universal con USB
+<img id="prodcar1" src="images\productos\zapatilla_universal.png" alt="zapatilla_universal"> Zapatilla universal con USB
 <input name="precio" id="precio" type="text" value="$100.00" readonly>
 <input type="number" id="quantity" name="quantity" min="1" max="5">
 <h5>Resumen de tu orden: </h5>
 <h5>Sub-total productos:</h5>
 </form>
-<button onclick="location.href='potreroDigital_proyecto_grupo4_Index.html'">Seguir comprando</button>
 
-<input type="submit" value="Continuar con la compra">
+<div class="">
+<div class="segcom">
+<button onclick="location.href='potreroDigital_proyecto_grupo4_Index.html'">Seguir comprando</button>
+</div>
+
+<div class="contcom">
+<input id="contcom" type="submit" value="Continuar con la compra">
+</div>
+</div>
+
 </div>
 
 	</main>

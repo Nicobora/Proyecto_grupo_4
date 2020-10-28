@@ -84,16 +84,16 @@
 							<li>Medios de Pago</li>
 						</ul>
 					</div>
-<form action="potreroDigital_proyecto_grupo4_Index.html">
+<form id="formenvio" action="potreroDigital_proyecto_grupo4_Index.html">
 	<div class="Pago">
 
 	<fieldset>
 	<p>
 		<legend>Ingresar cupón</legend>
 
-     <input type="text" name="desc">
+     <input id="desc" type="text" name="desc">
 
-     <input type="submit" value="Ingresar">
+     <input id="botondesc" type="submit" value="Ingresar">
 
    </p>
 </fieldset>
@@ -123,11 +123,12 @@
 
 	<p>
  <label>Cuotas:
-	 <select name="Cuotas">
+	 <select id="cuotas" name="Cuotas">
  	<option value="Una">1 Cuota</option>
  	<option value="Tres">3 Cuotas</option>
  	<option value="Seis">6 Cuotas</option>
  	<option value="Doce">12 Cuotas</option></label></p>
+</select>
 </fieldset>
 
 <fieldset>
@@ -165,7 +166,7 @@
 <p>
 <label>Provincia
 
-<select name="Provincia">
+<select id="provincia" name="Provincia">
 <option value="Buenos_Aires">Buenos Aires</option>
 <option value="Catamarca">Catamarca</option>
 <option value="Chaco">Chaco</option>
@@ -194,12 +195,12 @@
 
 <p>
 <label>Ciudad:
-<input type="text" class="fondo-form" id="cuidad" name="cuidad" onblur="validarcuidad();"></td>
+<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();"></td>
 <span id="cuidadPrompt"></span></label></p>
 </fieldset>
-</fieldset>
+
 </form>
-<input type="submit" value="Finalizar Compra">
+<input id="botonfin" type="submit" value="Finalizar Compra">
 	</div>
 	</main>
 

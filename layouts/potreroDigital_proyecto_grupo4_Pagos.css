@@ -158,6 +158,129 @@ body {
 /****main****/
 
 
+/**Formulario**/
+
+
+.Pago{
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#formenvio{
+width:50%;
+padding: 20px;
+border: 3em solid transparent;
+margin-bottom:0px;
+margin-left:16px;
+}
+
+fieldset
+{
+  background-color:#CCC;
+  max-width:500px;
+  padding:16px;
+  border:2px solid green;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+}
+
+
+/*Campos*/
+
+#desc{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#banco{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#venc {
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#nomtitular{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#numtarj{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#cod{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#cuotas{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#nombre{
+   border-radius: 5px;
+   background-color: #def;
+}
+
+#apellido{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#dni{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#telefono{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#calle{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#numero{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#provincia{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+#ciudad{
+  border-radius: 5px;
+  background-color: #def;
+}
+
+/*Botones*/
+
+input[type="submit"]{
+width:150px;
+padding:10px;
+border:none;
+border-radius:5px;
+background-color:#7C7B7B;
+font-size:20px;
+color:#fff;
+align-items: center;
+position: static;
+left: 180px;
+top: 1em;
+}
+
 /****footer****/
 
 footer {
@@ -285,371 +408,4 @@ footer {
 }
 #irArriba:hover {
     color: #000000;
-}
-
-
-/************************************CONTACTO************************************/
-
-.contenedorContacto {
-   justify-content: space-around;
-   align-items: center;
-   width: 100%;
-   height: 120vh;
-}
-
-/**Contacto**/
-
-.divContacto {
-    justify-content: space-around;
-    align-items: center;
-    width: 70%;
-    height: 90%;
-}
-
-.divContacto h3 {
-    align-items: center;
-}
-
-/*Datos Contacto*/
-
-.datosContacto{
-    align-items: center;
-    justify-content: center;
-    height: 20%;
-    width: 70%;
-}
-
-.datosContacto ul {
-    margin: 0 !important;
-}
-
-.datosContacto li {
-    flex-direction: row;
-    padding: 5px;
-}
-
-.datosContacto i {
-    padding: 3px 10px;
-}
-
-/**Formulario**/
-
-.formularioContacto {
-    justify-content: space-around;
-    height: 60%;
-    width: 70%
-}
-
-.formularioContacto label {
-    margin: 0 !important;
-    font-size: 15px;
-    padding-bottom: 5px;
-}
-
-.formularioContacto input {
-    font-size: 14px;
-    padding: 4px 0;
-}
-
-/*boton enviar*/
-
-.divButton {
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.formularioContacto button {
-    color: #f7f7f7;
-    background-color: #11cbd7;
-    border-radius: 6px;
-    font-weight: bold;
-    width: 12%;
-    border:none;
-    align-items: center;
-    padding: 5px;
-}
-/************************************PRODUCTOS************************************/
-
-.contenedorProductos{
-   justify-content: space-around;
-   align-items: center;
-   width: 100%;
-   height: 200vh;
-}
-
-/**breadcrumb**/
-
-.divBreadcrumbProductos{
-    background-color: #eaeaea;
-    width: 90%;
-    height: 4%;
-    border-radius: 4px;
-}
-
-/*productos*/
-
-.bodyProductos {
-    flex-direction: row;
-    width: 85%;
-    height: 90%;
-    justify-content: space-between;
-}
-
-.bodyProductos a:hover{
-    color: #000000;
-}
-
-/*categorias*/
-
-.colCategorias{
-    background-color: #f5f5f5;
-    width: 18%;
-    height: 20%;
-    padding: 15px 0 0 20px;
-}
-
-.colCategorias li a{
-    color: #000000;
-}
-
-/*grilla de productos*/
-
-.grillaProductos {
-    justify-content: space-around;
-    width: 80%;
-}
-
-/*form detalles*/
-
-.formDetalle{
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 5%;
-    padding:15px;
-    font-size: 13px;
-}
-
-.formDetalle label{
-    padding-top: 6px;
-}
-
-.formDetalle select{
-    flex-direction: row;
-    width: 20%;
-    margin-left: 10px;
-    color: #666666;
-    border: 1px solid #ccc;
-    height: 36px;
-    padding-left: 3px;
-}
-
-
-/*grilla*/
-
-.grilla {
-    height: 95%;
-    justify-content: space-around;
-}
-
-/*filas dentro de la grilla*/
-
-.fila {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 24%;
-}
-
-/*poducto de cada fila*/
-.producto {
-    width: 23%;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-    border-top: 1px solid #dedede;
-}
-
-.producto a {
-    align-items: center;
-    color: #000000;
-    padding-bottom: 10px;
-    font-weight: bold;
-    font-style: none;
-}
-
-.producto img {
-    width: 80%;
-    height: 90%;
-}
-
-
-/************************************PRODUCTOS POR CATEGORIA************************************/
-
-.grillaCatProducto {
-    height: 95%;
-    justify-content: flex-start;
-    margin-top: 30px;
-}
-
-
-/************************************DETALLE PRODUCTO************************************/
-
-.contenedorDetalleProducto {
-   justify-content: space-around;
-   align-items: center;
-   width: 100%;
-   height: 130vh;
-}
-
-.divProducto {
-    justify-content: space-around;
-    width: 70%;
-    height: 90%;
-}
-
-/*Detalle Producto*/
-
-.detalleProducto {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 45%;
-    width:90%;
-}
-
-/*Imagen del producto*/
-
-.imagenesProducto {
-    justify-content: center;
-    align-items: center;
-    width: 55%;
-    border-right: 1px solid #dedede;
-}
-
-.imagenesProducto img {
-    height: 70%;
-    width: 50%;
-}
-
-/*Datos del producto*/
-
-.datosProducto {
-    justify-content: space-around;
-    width: 40%;
-    padding: 15px;
-}
-
-.nombrePrecio {
-    height: 40%;
-    justify-content: space-around;
- }
-
- .nombrePrecio h5{
-    font-weight: bold;
- }
-
-.formCantidad {
-    width: 20%;
-    height: 20%;
-}
-
-.botonCarrito {
-    height: 30%;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.botonCarrito  button {
-    align-items: center;
-    width: 90%;
-    font-size: 14px;
-    background-color: #11cbd7;
-    border: none;
-    padding: 7px;
-    text-transform: uppercase;
-}
-
-/*Descripcion del producto*/
-
-.descripcionProducto {
-    height: 38%;
-    font-size: 14px;
-}
-
-/************************************ERROR 404************************************/
-
-#error404 {
-    height: 100vh;
-    background-color: #e1e1e3;
-    align-items: center;
-    justify-content: center;
-}
-
-.notfound {
-    max-width: 520px;
-    width: 100%;
-    text-align: center;
- }
-
-.notfound .cloud > div {
-    width: 100%;
-    background: #fff;
-    border-radius: 90px;
-    height: 125px;
-}
-
-.cloud div {
-    justify-content: center;
-}
-
-.notfound .cloud > div:nth-child(1) {
-    -webkit-box-shadow: 5px 5px 0px 0px #f3f3f3;
-            box-shadow: 5px 5px 0px 0px #f3f3f3;
-}
-
-.notfound .cloud > div:nth-child(2) {
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-box-shadow: 5px 5px 0px 0px #f3f3f3;
-            box-shadow: 5px 5px 0px 0px #f3f3f3;
-    position: relative;
-    z-index: 10;
-}
-
-.notfound .cloud > div:nth-child(3) {
-    -webkit-box-shadow: 5px 5px 0px 0px #f3f3f3;
-            box-shadow: 5px 5px 0px 0px #f3f3f3;
-    position: relative;
-    z-index: 90;
-}
-
-.notfound h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 86px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #151515;
-}
-
-.notfound h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: #151515;
-}
-
-.notfound a {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #11cbd7;
-    padding: 15px 30px;
-    border-radius: 5px;
-    color: #fff;
-    font-weight: 700;
-    margin-top: 20px;
-    width: 30%;
-    align-self: center;
 }
