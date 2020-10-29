@@ -1,0 +1,28 @@
+/************************************TERMINOS Y CONDICIONES************************************/
+
+.containerTermsyCond {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.containerTermsyCond h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.containerTermsyCond h4{
+    width: auto;
+    text-align: center;
+}
+
+.containerTermsyCond p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.containerTermsyCond h6{
+    text-align: justify;
+    margin: 10px;
+}
+

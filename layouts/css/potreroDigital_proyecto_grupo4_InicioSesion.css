@@ -1,0 +1,43 @@
+/************************************INICIAR SESION************************************/
+
+
+.containerIniciarSesion{
+    
+    height: 100%;
+    width: 70%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#iniciar{
+    align-self:flex-start;
+}
+
+.contraseña{
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#Registro{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerIniciarSesion button{
+    width: 20%;
+    align-items: center;
+}
+
+.containerIniciarSesion h4 a{
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+.containerIniciarSesion h4{
+    width: 30%;
+}
+
+.campo{
+    align-items: flex-start;
+}
