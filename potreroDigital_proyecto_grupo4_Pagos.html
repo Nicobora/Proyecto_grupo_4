@@ -3,16 +3,20 @@
 
 <head>
 	<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_Pagos.css">
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="icon" type="image/png" href="images/icono.png" />
-	
-	<title>THE FLEX BOX</title>
+
+		<title>THE FLEX BOX</title>
 
 	<!-- Stlylesheet -->
-	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Styles.css">
-	<link rel="stylesheet" type="text/css" href="./css/potreroDigital_proyecto_grupo4_Index.css">
+	<link rel="stylesheet" type="text/css" href="potreroDigital_proyecto_grupo4_Styles.css">
+
 
 	<!-- Font Awesome Iconos -->
 
@@ -32,13 +36,11 @@
 					<li><a href="potreroDigital_proyecto_grupo4_Registrarse.html">Registrarse</a></li>
 					<li><a href="potreroDigital_proyecto_grupo4_InicioSesion.html">Iniciar Sesion</a></li>
 				</ul>
-				
 				<div class="logo">
-					<a href="potreroDigital_proyecto_grupo4_Index.html"><img src="images/logo5.png" alt="Logo"></a>
+					<a href="potreroDigital_proyecto_grupo4_Index.html"><img src="images/logo5.png"></a>
 				</div>
 				<div class="menuCarrito">
 					<a id="carrito" href="potreroDigital_proyecto_grupo4_Carrito.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
-
 					<div class="buscador">
 						<input  id="input_Buscador" type="search" placeholder="Buscar"/>
 						<button id="btn_Buscador"><i class="fas fa-search"></i></button>
@@ -75,73 +77,133 @@
 	</header>
 
 	<main>
+		<div class="contenedorEnvios">
 
-		<div class="contenedorIndex">
+					<div class="divBreadcrumb">
+						<ul class="menuBreadcrumb">
+							<li><a href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a></li>
+							<span>/</span>
+							<li>Medios de Pago</li>
+						</ul>
+					</div>
+<form id="formenvio" action="potreroDigital_proyecto_grupo4_Index.html">
+	<div class="Pago">
 
-			<div>
+	<fieldset>
+	<p>
+		<legend>Ingresar cupón</legend>
 
-			<div id="carouselExampleIndicators" id="indexCarousel" class="carousel" data-ride="carousel">
-			 
-			  <ol class="carousel-indicators indicador">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active ">
-			     <a href="potreroDigital_proyecto_grupo4_ProductosCocina.html"><img class="imagenCarousel" src="images/banners/bannerCocina.png" alt="Primer slide"></a>
-			    </div>
-			    <div class="carousel-item">
-			      <a href="potreroDigital_proyecto_grupo4_ProductosBaño.html"> <img class="imagenCarousel" src="images/banners/bannerBaño.png" alt="Segundo slide"></a>
-			    </div>
-			    <div class="carousel-item ">
-			    <a href="potreroDigital_proyecto_grupo4_ProductosElectronica.html"> <img class="imagenCarousel" src="images/banners/bannerElectro.png" alt="Tercer slide"></a>
-			    </div>
-			  </div>
+     <input id="desc" type="text" name="desc">
 
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Anterior</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Siguiente</span>
-			  </a>
+     <input id="botondesc" type="submit" value="Ingresar">
 
-			</div>
-			</div>
+   </p>
+</fieldset>
+<fieldset>
+	<legend><input type="radio" class="fondo-form" name="tipopago" value="tarjeta">Tarjeta de Credito / Debito</legend>
+	<p><label>Banco:<br>
+	<input  type="text" class="fondo-form" id="banco" onblur="validarbanco();">
+	<span id="bancoPrompt"></span></label></p>
 
-			<div id="indexDestacados">
-			<h3>Productos destacados</h3>
-				<div class="galeria">
-					<div class="divDestacados"><a href="potreroDigital_proyecto_grupo4_DetalleProducto3.html"><img src="images/productos/electronica/producto3.jpg" alt="producto 1"></a></div>
-					<div class="divDestacados"><a href="potreroDigital_proyecto_grupo4_DetalleProducto5.html"><img src="images/productos/baño/producto5.jpg" alt="producto 2"></a></div>
-					<div class="divDestacados"><a href="potreroDigital_proyecto_grupo4_DetalleProducto12.html"><img src="images/productos/cocina/producto12.jpg" alt="producto 3"></a></div>
-					<div class="divDestacados"><a href="potreroDigital_proyecto_grupo4_Error404.html"><img src="images/destacados/destacados4.jpg" alt="producto 4"></a></div>
-				</div>
-			</div>
+	<p>
+ <label>Vencimiento:
+	<input type="month" class="fondo-form" id="venc" name="venc" onblur="validarvenc();">
+	<span id="vencPrompt"></span></label></p>
 
-			<div id="indexPromociones">
-				<h3>¡Las mejores ofertas!</h3>
-				<div class="galeria">
-					<div class="divPromociones"><a href="potreroDigital_proyecto_grupo4_ProductosCocina.html"><img class="ampliar" src="images/promociones/promo1.png" alt="Promo 1"></a></div>
-					<div class="divPromociones"><a href="potreroDigital_proyecto_grupo4_ProductosOficina.html"><img class="ampliar"src="images/promociones/promo2.png" alt="Promo 2"></a></div>
-					<div class="divPromociones"><a href="potreroDigital_proyecto_grupo4_Error404.html"><img class="ampliar" src="images/promociones/promo3.png" alt="Promo 3"></a></div>
-				</div>
-			</div>
+	<p><label>Nombre titular:<br>
+	<input  type="text" class="fondo-form" id="nomtitular" onblur="validarnomtitular();">
+	<span id="nomtitularPrompt"></span></label></p>
 
+	<p>
+ <label>Nro Tarjeta:
+	<input type="number" class="fondo-form" id="numtarj" name="numtarj" onblur="validarnumtarj();">
+	<span id="numtarjPrompt"></span></label></p>
 
-			<div id="indexPagosEnvios">
-				<h3 >Formas de pago y envios</h3>
-				<div class="galeria">
-					<div class="divPagosEnvios"> <img  class="rotate" src="images/envios/envios.png" alt="Envios"></div>
-					<div class="divPagosEnvios"><img class="rotate" src="images/envios/compra.png" alt="Compra"></div>
-					<div class="divPagosEnvios"><img class="rotate" src="images/envios/pagos.png" alt="Paga"></div>
-				</div>
-			</div>
+	<p><label>Codigo seguridad:<br>
+	<input  type="number" class="fondo-form" id="cod" onblur="validarcod();">
+	<span id="codPrompt"></span></label></p>
 
-		</div>
+	<p>
+ <label>Cuotas:
+	 <select id="cuotas" name="Cuotas">
+ 	<option value="Una">1 Cuota</option>
+ 	<option value="Tres">3 Cuotas</option>
+ 	<option value="Seis">6 Cuotas</option>
+ 	<option value="Doce">12 Cuotas</option></label></p>
+</select>
+</fieldset>
 
+<fieldset>
+	<legend><input type="radio" class="fondo-form" name="tipopago" value="efectivo">Pago en efectivo / Rapipago</legend>
+
+	<p><label>Nombre:<br>
+	<input  type="text" class="fondo-form" id="nombre" onblur="validarnombre();">
+	<span id="nombrePrompt"></span></label></p>
+
+	<p>
+ <label>Apellido:
+	<input type="text" class="fondo-form" id="apellido" name="apellido" onblur="validarapellido();">
+	<span id="apellidoPrompt"></span></label></p>
+
+	<p>
+ <label>	DNI:
+	<input type="number" class="fondo-form" id="dni" name="dni" onblur="validardni();">
+	<span id="dniPrompt"></span></label></p>
+
+	<p>
+	<label>Telefono:
+<input name="telefono" id="telefono" type="text" onblur="validartelefono();">
+<span id="telefonoPrompt"></span></label></p>
+
+<p>
+<label>	Calle:
+<input type="text" class="fondo-form" id="calle" name="calle" onblur="validarcalle();">
+<span id="callePrompt"></span></label></p>
+
+<p>
+<label>Numero:
+<input type="number" class="fondo-form" id="numero" name="numero" onblur="validarnumero();">
+<span id="numeroPrompt"></span></label></p>
+
+<p>
+<label>Provincia
+
+<select id="provincia" name="Provincia">
+<option value="Buenos_Aires">Buenos Aires</option>
+<option value="Catamarca">Catamarca</option>
+<option value="Chaco">Chaco</option>
+<option value="Chubut">Chubut</option>
+<option value="Cordoba">Córdoba</option>
+<option value="Corrientes">Corrientes</option>
+<option value="Entre_Ríos">Entre Ríos</option>
+<option value="Formosa">Formosa</option>
+<option value="Jujuy">Jujuy</option>
+<option value="La_Pampa">La Pampa</option>
+<option value="La_Rioja">La Rioja</option>
+<option value="Mendoza">Mendoza</option>
+<option value="Misiones">Misiones</option>
+<option value="Neuquen">Neuquén</option>
+<option value="Rio_Negro">Río Negro</option>
+<option value="Salta">Salta</option>
+<option value="San_Juan">San Juan</option>
+<option value="San_Luis">San Luis</option>
+<option value="Santa_Cruz">Santa Cruz</option>
+<option value="Santa_Fe">Santa Fe</option>
+<option value="Santiago_del_Estero">Santiago del Estero</option>
+<option value="Tierra_del_Fuego">Tierra del Fuego</option>
+<option value="Tucuman">Tucumán</option>
+</select>
+</label></p>
+
+<p>
+<label>Ciudad:
+<input type="text" class="fondo-form" id="ciudad" name="cuidad" onblur="validarcuidad();"></td>
+<span id="cuidadPrompt"></span></label></p>
+</fieldset>
+
+</form>
+<input id="botonfin" type="submit" value="Finalizar Compra">
+	</div>
 	</main>
 
 	<footer>
@@ -195,8 +257,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
-   <script type="text/javascript" src="js/Index.js"></script>
 
 </body>
 </html>

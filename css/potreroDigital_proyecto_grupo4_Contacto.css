@@ -1,0 +1,82 @@
+/************************************CONTACTO************************************/
+
+.contenedorContacto {
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   height: 120vh;
+}
+
+/**Contacto**/
+
+.divContacto {
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 90%;
+}
+
+.divContacto h3 {
+    align-items: center;
+}
+
+/*Datos Contacto*/
+
+.datosContacto{
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 70%;
+}
+
+.datosContacto ul {
+    margin: 0 !important;
+}
+
+.datosContacto li {
+    flex-direction: row;
+    padding: 5px;
+}
+
+.datosContacto i {
+    padding: 3px 10px;
+}
+
+/**Formulario**/
+
+.formularioContacto {
+    justify-content: space-around;
+    height: 60%;
+    width: 70%
+}
+
+.formularioContacto label {
+    margin: 0 !important;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.formularioContacto input {
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+/*boton enviar*/
+
+.divButton {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.formularioContacto button {
+    color: #f7f7f7;
+    background-color: #11cbd7;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 12%;
+    border:none;
+    align-items: center;
+    padding: 5px;
+}
+
