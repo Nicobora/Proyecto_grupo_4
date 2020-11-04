@@ -110,6 +110,10 @@ body {
 
 /*navbar*/
 
+.hamburguesa {
+display: none;
+}
+
 .menuNavbar {
     flex-direction: row;
     background-color: #fa4659;
@@ -305,6 +309,10 @@ footer {
 /**************MEDIA QUERIES*****************/
 
 @media screen and (max-width: 600px) {
+
+.hamburguesa {
+	display:inline-block;
+}
 
 /****header****/
 .headerContainer {
@@ -715,7 +723,7 @@ footer h6 {
 #divContacto {
     color: #ffffff;
     padding: 10px 5px;
-    font-size: 12px;
+    font-size: 2em;
 }
 
 #divContacto li {
