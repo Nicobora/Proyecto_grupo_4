@@ -56,21 +56,20 @@
 /*Terminos y Notificaciones*/
 
 .divTerminosNotif{
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
-.notifyterminos {
+.divTerminosNotif h5 {
     font-size: 13px;
     color: #000000;
     flex-direction: row;
-    margin:0 30px;
+    margin: 0 15px; 
 }
 
-.notifyterminos a {
-    color: black;
+h5 a {
     padding: 0 5px;
     font-size: 13px;
     font-style: italic;
@@ -82,10 +81,24 @@
 }
 
 .divCheck label {
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 13px;
 }
 
+.divCheck2 {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCheck2 label {
+    font-size: 13px;
+}
+
+hr {
+    width: 80%;
+    align-self: center;
+    margin: 0;
+}
 
 /*Boton Registrarse*/
 .botonRegistrarse{
@@ -103,4 +116,19 @@
     font-weight: bold;
     border:none;
     padding: 5px;
+}
+
+/*Inicia Sesion*/
+
+.inicioSesion {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.inicioSesion a {
+    margin-left: 10px;
 }
