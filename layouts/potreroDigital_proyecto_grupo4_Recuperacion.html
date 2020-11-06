@@ -117,11 +117,11 @@
 			<form class="recuperaTuCuenta" action="index.html" method="post">
 				<p>Vamos a enviarte un email para que puedas cambiar tu contraseña. </p>
 				<label for="user">Ingresa tu e-mail</label>
-				<input type="text" name="user" placeholder="Ej. nombre@ejemplo.com">   	
+				<input id="emailRecuperacion" type="text" name="user" placeholder="Ej. nombre@ejemplo.com">   	
 			</form>
 
 			<div class="botonRecuperacion">
-				<button type="button" name="Iniciar" id="btnRecuperacion">Enviar Email</button>
+				<button type="button" name="Iniciar" id="btnRecuperacion" onclick="recuperacion()">Enviar Email</button>
 			</div>
 		</div>
 	</main>
