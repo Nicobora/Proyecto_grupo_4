@@ -32,6 +32,10 @@ body {
     height: 60%;
 }
 
+.header_Sup_Resp {
+    display: none;
+}
+
 /*Incio-Registrar*/
 
 .menuInicio {
@@ -144,6 +148,18 @@ body {
 
 .botonHamburguesa {
     display: block;
+}
+
+.arrow {
+    padding-left: 15px;
+}
+
+.dropdown-menu  .subMenu {
+    background-color: grey;
+    color:white;
+    position: absolute !important;
+    top: 70px;
+    left: 180px;
 }
 
 /*****breadcrumb******/
@@ -324,142 +340,169 @@ footer {
 
 
 
-
-
-
-/**************MEDIA QUERIES*****************/
+/********************************************************************/
+/*******************************************************************/
+/******************************************************************/
+/*************************MEDIA QUERIES***************************/
 
 @media screen and (max-width: 600px) {
 
+/****header****/
+.headerContainer {
+    height: 20vh;
+}
+
+.header_Sup {
+    display:none;
+}
+
+.header_Sup_Resp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/*logo*/
+
+.logo {
+    align-self: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+/*Menu Iconos*/
+
+.menuIconos {
+     justify-content: center;
+}
+
+.menuIconos ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0; 
+
+}
+
+#iniciarSesion {
+    text-decoration: none;
+    color: #11cbd7;
+    margin: 0;
+    color: #11cbd7;
+    margin: 0 10px;
+}
+
+#carrito {
+    margin: 0 10px;
+}
+
+.buscador {
+    background-color: transparent;
+    border-radius: none;
+    width: 50%;
+    justify-content: space-around;
+}
+
+#inputBuscador {
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    width: 70%;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border:none;
+}
+
+#btn_Buscador {
+    text-decoration: none;
+    color: #11cbd7;
+    margin: 0;
+    color: #11cbd7;
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+/****footer****/
+footer {
+    height: 35vh;
+}
+
+footer h6 {
+    font-size: 12px;
+    text-align: center;
+}
+
+/*contacto*/
+#divContacto {
+    color: #ffffff;
+    padding: 10px 5px;
+    width: 25%;
+    font-size: 10px;
+}
+
+#divContacto li {
+    padding: 2px;
+}
+
+#divContacto i {
+    padding: 5px 4px;
+}
+
+/*mapa de sitio*/
+#divMapaSitio {
+    display:none;
+}
+
+/* redes sociales */
+
+#divRedesSociales {
+    padding: 10px 0;
+    width: 10%;
+    font-size: 12px;
+ }
+
+/*newsletter*/
+#divNewsletter {
+    padding: 10px;
+    width: 25%;
+}
+
+#divNewsletter input {
+   margin-top: 10px;
+}
+
+#inputEmail {
+    padding-left: 5px;
+    font-size: 10px;
+    width: 100%;
+}
+
+#botonSuscribite {
+    font-size: 12px;
+    width:80%;
+}
+
 .divHamburguesa {
-	display:inline-block;
+    display:inline-block;
     text-align: left;
 }
 
-/****header****/
-.headerContainer {
-    height: 25vh;
-}
-
-.header_Sup {
-    height: 50%;
-}
-
-/*Incio-Registrar*/
-.menuInicio {
-    width: 25%;
-}
-
-.menuInicio li>a {
-    align-self: center;
-    margin: 5px;
-    font-size: 12px;
-    width: 75%;
-}
-
-/*logo*/
-
-.logo {
-    justify-content: center;
-}
-
-.logo img {
-    width: 100%;
-    height: auto;
-}
-
-/*Menu Carrito*/
-.menuCarrito {
-    width: 25%;
-}
-
-#carrito {
-    text-decoration: none;
-    color: #11cbd7;
-    margin: 0;
-}
-
-/*buscador*/
-.buscador {
-    margin: 0;
-}
-
-#input_Buscador {
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-}
-
-#btn_Buscador {
-display: none;
-}
-
-/****footer****/
-footer {
-    height: 35vh;
-}
-
-footer h6 {
-    font-size: 12px;
-    text-align: center;
-}
-
-/*contacto*/
-#divContacto {
-    color: #ffffff;
-    padding: 10px 5px;
-    width: 25%;
-    font-size: 10px;
-}
-
-#divContacto li {
-    padding: 2px;
-}
-
-#divContacto i {
-    padding: 5px 4px;
-}
-
-/*mapa de sitio*/
-#divMapaSitio {
-    display:none;
-}
-
-/* redes sociales */
-
-#divRedesSociales {
-    padding: 10px 0;
-    width: 10%;
-    font-size: 12px;
- }
-
-/*newsletter*/
-#divNewsletter {
-    padding: 10px;
-    width: 25%;
-}
-
-#divNewsletter input {
-   margin-top: 10px;
-}
-
-#inputEmail {
-    padding-left: 5px;
-    font-size: 10px;
-    width: 100%;
-}
-
-#botonSuscribite {
-    font-size: 12px;
-    width:80%;
-}
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Medium devices (landscape tablets, 768px and up) 
 @media  screen and (max-width: 768px) {
 
-/****header****/
+/****header***
 .headerContainer {
     height: 25vh;
 }
@@ -468,7 +511,7 @@ footer h6 {
     height: 50%;
 }
 
-/*Incio-Registrar*/
+/*Incio-Registrar
 .menuInicio {
     width: 25%;
 }
@@ -480,7 +523,7 @@ footer h6 {
     width: 75%;
 }
 
-/*logo*/
+/*logo*
 
 .logo {
     justify-content: center;
@@ -491,7 +534,7 @@ footer h6 {
     height: auto;
 }
 
-/*Menu Carrito*/
+/*Menu Carrito
 .menuCarrito {
     width: 25%;
 }
@@ -502,7 +545,7 @@ footer h6 {
     margin: 0;
 }
 
-/*buscador*/
+/*buscador
 .buscador {
     margin: 0;
 }
@@ -517,7 +560,7 @@ footer h6 {
 display: none;
 }
 
-/****footer****/
+/****footer***
 footer {
     height: 35vh;
 }
@@ -527,7 +570,7 @@ footer h6 {
     text-align: center;
 }
 
-/*contacto*/
+/*contacto*
 #divContacto {
     color: #ffffff;
     padding: 10px 5px;
@@ -543,12 +586,12 @@ footer h6 {
     padding: 5px 4px;
 }
 
-/*mapa de sitio*/
+/*mapa de sitio*
 #divMapaSitio {
     display:none;
 }
 
-/* redes sociales */
+/* redes sociales *
 
 #divRedesSociales {
     padding: 10px 0;
@@ -556,7 +599,7 @@ footer h6 {
     font-size: 12px;
  }
 
-/*newsletter*/
+/*newsletter*
 #divNewsletter {
     padding: 10px;
     width: 25%;
@@ -580,15 +623,15 @@ footer h6 {
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) *
 @media screen and (max-width: 992px) {
 
-/****header****/
+/****header****
 .headerContainer {
     height: 30vh;
 }
 
-/*Incio-Registrar*/
+/*Incio-Registrar*
 .menuInicio {
     width: 25%;
 }
@@ -600,7 +643,7 @@ footer h6 {
     width: 75%;
 }
 
-/*Menu Carrito*/
+/*Menu Carrito*
 .menuCarrito {
     width: 25%;
 }
@@ -611,7 +654,7 @@ footer h6 {
     margin: 0;
 }
 
-/*buscador*/
+/*buscador*
 .buscador {
     margin: 0;
 }
@@ -626,7 +669,7 @@ footer h6 {
 display: none;
 }
 
-/****footer****/
+/****footer****
 footer {
     height: 35vh;
 }
@@ -636,7 +679,7 @@ footer h6 {
     text-align: center;
 }
 
-/*contacto*/
+/*contacto*
 #divContacto {
     color: #ffffff;
     padding: 10px 5px;
@@ -652,12 +695,12 @@ footer h6 {
     padding: 5px 4px;
 }
 
-/*mapa de sitio*/
+/*mapa de sitio*
 #divMapaSitio {
     display:none;
 }
 
-/* redes sociales */
+/* redes sociales *
 
 #divRedesSociales {
     padding: 10px 0;
@@ -665,7 +708,7 @@ footer h6 {
     font-size: 12px;
  }
 
-/*newsletter*/
+/*newsletter*
 #divNewsletter {
     padding: 10px;
     width: 25%;
@@ -691,12 +734,12 @@ footer h6 {
 
 @media screen and (max-width: 1200px) {
 
-/****header****/
+/****header****
 .headerContainer {
     height: 25vh;
 }
 
-/*Incio-Registrar*/
+/*Incio-Registrar*
 .menuInicio {
 
 }
@@ -708,7 +751,7 @@ footer h6 {
     width: 75%;
 }
 
-/*Menu Carrito*/
+/*Menu Carrito*
 
 #carrito {
     text-decoration: none;
@@ -716,7 +759,7 @@ footer h6 {
     margin: 0;
 }
 
-/*buscador*/
+/*buscador*
 .buscador {
     margin: 0;
 }
@@ -731,7 +774,7 @@ footer h6 {
     display: none;
 }
 
-/****footer****/
+/****footer****
 footer {
     height: 35vh;
 }
@@ -741,7 +784,7 @@ footer h6 {
     text-align: center;
 }
 
-/*contacto*/
+/*contacto*
 #divContacto {
     color: #ffffff;
     padding: 10px 5px;
@@ -756,19 +799,19 @@ footer h6 {
     padding: 5px 4px;
 }
 
-/*mapa de sitio*/
+/*mapa de sitio*
 #divMapaSitio {
     font-size: 12px;
 }
 
-/* redes sociales */
+/* redes sociales *
 
 #divRedesSociales {
     padding: 10px 0;
     font-size: 12px;
  }
 
-/*newsletter*/
+/*newsletter*
 #divNewsletter {
     padding: 10px;
 
@@ -792,3 +835,4 @@ footer h6 {
 
 }
 
+*/

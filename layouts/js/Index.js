@@ -23,6 +23,8 @@
 		}
 	}
 
+/*MOSTRAR CARTEL AL SUSCRIBIRSE*/
+
 	function suscribite() {
 
 		var num = document.getElementById("inputEmail").value.indexOf("@");
@@ -39,4 +41,12 @@
 			document.getElementById("graciasPorSuscribirte").style.display = 'inline-block';
 
 		}
+	}
+
+/*MOSTRAR EL INPUT BUSCADOR*/
+
+	function mostrarBuscador() {
+
+		document.getElementById("inputBuscador").style.display = 'inline-block';
+
 	}
