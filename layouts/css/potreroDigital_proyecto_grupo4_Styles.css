@@ -41,6 +41,7 @@ body {
 .menuInicio {
     width: 15%;
     justify-content: space-around;
+    margin: 0;
 }
 .menuInicio li>a {
     text-decoration: none;
@@ -70,14 +71,15 @@ body {
 .menuCarrito {
     justify-content: space-around;
     width: 15%;
-  }
+}
 
 /*carrito*/
 
 #carrito {
     text-decoration: none;
     color: #11cbd7;
-    margin: 10px 5px 0;
+    height: 50%;
+    justify-content: center;  
 }
 
 /*buscador*/
@@ -154,13 +156,6 @@ body {
     padding-left: 15px;
 }
 
-.dropdown-menu  .subMenu {
-    background-color: grey;
-    color:white;
-    position: absolute !important;
-    top: 70px;
-    left: 180px;
-}
 
 /*****breadcrumb******/
 
@@ -494,6 +489,17 @@ footer h6 {
     text-align: left;
 }
 
+#subMenu {
+    display: none;  
+    position: absolute;
+    top: 70px;
+    left: 180px;
+
+}
+
+.mostrar:hover > #subMenu {
+    display: block;
+}
 
 }
 
