@@ -18,6 +18,10 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
+	<!-- Google Fonts -->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -105,7 +109,7 @@
 				     	<a class="nav-link" href="potreroDigital_proyecto_grupo4_Contacto.html">Contacto</a>
 				     </li> 
 				    </ul>
-				</div>			
+				</div>
 				
 				<div class="divHamburguesa" id="navbarNavDropdown">
 				 	<ul class="navbar-nav ">
@@ -116,7 +120,9 @@
 		        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							        <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a>
 									<div class="mostrar"> 
-										<a class="dropdown-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="potreroDigital_proyecto_grupo4_Productos.html"> Productos <i class="fas fa-angle-right arrow "></i></a>
+										<a class="dropdown-item" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  href="potreroDigital_proyecto_grupo4_Productos.html"> Productos 
+											<i class="fas fa-angle-right arrow "></i>
+										</a>
 					        			<div class="dropdown-menu" id="subMenu" aria-labelledby="navbarDropdownMenuLink" >
 									         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosBaño.html">Baño</a>
 									         <a class="dropdown-item" href="potreroDigital_proyecto_grupo4_ProductosCocina.html">Cocina</a>
@@ -138,7 +144,7 @@
 
 		<div class="contenedorProductos">
 
-			<div class="divBreadcrumbProductos">
+			<div class="divBreadcrumb">
 				<ul class="menuBreadcrumb">
 					<li>
 						<a href="potreroDigital_proyecto_grupo4_Index.html">Inicio</a>
@@ -170,6 +176,30 @@
 					<hr>
 				</div>
 
+				<div class="colCategoriasResp" onclick="return desplegar()">
+					<div class="tituloCategorias">
+						<h4>Categorías</h4>
+						<i class="fas fa-angle-down"></i>
+					</div>
+					<div id="categoriasResponsive">
+						<ul>
+							<li>
+								<a href="potreroDigital_proyecto_grupo4_ProductosBaño.html">Baño</a>
+							</li>
+							<li>
+								<a href="potreroDigital_proyecto_grupo4_ProductosCocina.html">Cocina</a>
+							</li>
+							<li>
+								<a href="potreroDigital_proyecto_grupo4_ProductosElectronica.html">Electrónica</a>
+							</li>
+							<li>
+								<a href="potreroDigital_proyecto_grupo4_ProductosOficina.html">Oficina</a>
+							</li>
+						</ul>
+						<hr>
+					</div>
+				</div>
+
 				<div class="grillaProductos">
 
 					<div class="formDetalle">
@@ -185,38 +215,37 @@
 
 					<div class="grilla">
 
-						<div class="fila">
-							<div class="producto">
-								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto1.html">
-									<img src="images/productos/electronica/producto1.jpg" alt="MINI CONSOLA">
-								</a>
-								<div class="descripcion">
-									<a href="potreroDigital_proyecto_grupo4_DetalleProducto1.html">MINI CONSOLA</a>
-									<p>$4800</p>
-								</div>
+						<div class="producto">
+							<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto1.html">
+								<img src="images/productos/electronica/producto1.jpg" alt="MINI CONSOLA">
+							</a>
+							<div class="descripcion">
+								<a href="potreroDigital_proyecto_grupo4_DetalleProducto1.html">MINI CONSOLA</a>
+								<p>$4800</p>
 							</div>
+						</div>
 
-							<div class="producto">
-								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto2.html">
-									<img src="images/productos/electronica/producto2.jpg" alt="CANDY MACHINE">
-								</a>
-								<div class="descripcion">
-									<a href="potreroDigital_proyecto_grupo4_DetalleProducto2.html">CANDY MACHINE</a>
-									<p>$2000</p>
-								</div>
+						<div class="producto">
+							<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto2.html">
+								<img src="images/productos/electronica/producto2.jpg" alt="CANDY MACHINE">
+							</a>
+							<div class="descripcion">
+								<a href="potreroDigital_proyecto_grupo4_DetalleProducto2.html">CANDY MACHINE</a>
+								<p>$2000</p>
 							</div>
+						</div>
 
-							<div class="producto">
-								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto3.html">
-									<img src="images/productos/electronica/producto3.jpg" alt="MINI ARCADE">
-								</a>
-								<div class="descripcion">
-									<a class="productName" >MINI ARCADE</a>
-									<p>$4500</p>
-								</div>
+						<div class="producto">
+							<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto3.html">
+								<img src="images/productos/electronica/producto3.jpg" alt="MINI ARCADE">
+							</a>
+							<div class="descripcion">
+								<a class="productName" >MINI ARCADE</a>
+								<p>$4500</p>
 							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto4.html">
 									<img src="images/productos/electronica/producto4.jpg" alt="MINI ESTUDIO FOTOGRAFICO">
 								</a>
@@ -224,11 +253,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto4.html">MINI ESTUDIO FOTOGRAFICO</a>
 									<p>$2800</p>
 								</div>
-							</div>
 						</div>
-
-						<div class="fila">
-							<div class="producto">
+						
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto5.html">
 									<img src="images/productos/baño/producto5.jpg" alt="LUZ TOILETTE">
 								</a>
@@ -236,9 +263,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto5.html">LUZ TOILETTE</a>
 									<p>$1.000</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto6.html">
 									<img src="images/productos/baño/producto6.jpg" alt="CEPILLO FLEXIBLE">
 								</a>
@@ -246,9 +273,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto6.html">CEPILLO FLEXIBLE</a>
 									<p>$400</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto7.html">
 									<img src="images/productos/baño/producto7.jpg" alt="PORTA HISPOS NUBE">
 								</a>
@@ -256,9 +283,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto7.html">PORTA HISOPOS NUBE</a>
 									<p>$900</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto8.html">
 									<img src="images/productos/baño/producto8.jpg" alt="ROBOT PORTA CEPILLO">
 								</a>
@@ -266,11 +293,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto8.html">ROBOT PORTA CEPILLO</a>
 									<p>$800</p>
 								</div>
-							</div>
 						</div>
-
-						<div class="fila">
-							<div class="producto">
+					
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto9.html">
 									<img src="images/productos/cocina/producto9.jpg" alt="TIMER LECHUZA">
 								</a>
@@ -278,9 +303,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto9.html">TIMER LECHUZA</a>
 									<p>$700</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto10.html">
 									<img src="images/productos/cocina/producto10.jpg" alt="TIJERA CORTA VERDURAS">
 								</a>
@@ -288,9 +313,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto10.html">TIJERA CORTA VERDURAS</a>
 									<p>$1200</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto11.html">
 									<img src="images/productos/cocina/producto11.jpg" alt="INFUSOR DE TE PERRITO">
 								</a>
@@ -298,9 +323,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto11.html">INFUSOR DE TE PERRITO</a>
 									<p>$800</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto12.html">
 									<img src="images/productos/cocina/producto12.jpg" alt="MOTO CORTA PIZZA">
 								</a>
@@ -308,11 +333,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto12.html">MOTO CORTA PIZZA</a>
 									<p>$1200</p>
 								</div>
-							</div>
 						</div>
-
-						<div class="fila">
-							<div class="producto">
+						
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto13.html">
 									<img src="images/productos/oficina/producto13.jpg" alt="ORGANIZADOR HOMBRECITO">
 								</a>
@@ -320,9 +343,9 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto13.html">ORGANIZADOR HOMBRECITO</a>
 									<p>$1500</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
+						<div class="producto">
 								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto14.html">
 									<img src="images/productos/oficina/producto14.jpg" alt="PORTA LAPICES CASETTE">
 								</a>
@@ -330,26 +353,25 @@
 									<a href="potreroDigital_proyecto_grupo4_DetalleProducto14.html">PORTA LAPICES CASETTE</a>
 									<p>$1800</p>
 								</div>
-							</div>
+						</div>
 
-							<div class="producto">
-								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto15.html">
-									<img src="images/productos/oficina/producto15.jpg" alt="CHANGUITO SUPERMERCADO LAPICERO">
-								</a>
-								<div class="descripcion">
-									<a href="potreroDigital_proyecto_grupo4_DetalleProducto.html15">CHANGUITO  LAPICERO</a>
-									<p>$900</p>
-								</div>
+						<div class="producto">
+							<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto15.html">
+								<img src="images/productos/oficina/producto15.jpg" alt="CHANGUITO SUPERMERCADO LAPICERO">
+							</a>
+							<div class="descripcion">
+								<a href="potreroDigital_proyecto_grupo4_DetalleProducto.html15">CHANGUITO  LAPICERO</a>
+								<p>$900</p>
 							</div>
+						</div>
 
-							<div class="producto">
-								<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto16.html">
-									<img src="images/productos/oficina/producto16.jpg" alt="CARTUCHERA VERDURAS">
-								</a>
-								<div class="descripcion">
-									<a href="potreroDigital_proyecto_grupo4_DetalleProducto16.html">CARTUCHERA VERDURAS</a>
-									<p>$900</p>
-								</div>
+						<div class="producto">
+							<a class="imgProducto" href=" potreroDigital_proyecto_grupo4_DetalleProducto16.html">
+								<img src="images/productos/oficina/producto16.jpg" alt="CARTUCHERA VERDURAS">
+							</a>
+							<div class="descripcion">
+								<a href="potreroDigital_proyecto_grupo4_DetalleProducto16.html">CARTUCHERA VERDURAS</a>
+								<p>$900</p>
 							</div>
 						</div>
 					</div>
@@ -397,13 +419,13 @@
 
 			<div id="divRedesSociales">
 				<h6>REDES SOCIALES</h6>
-				<a href="http://www.facebook.com">
+				<a href="http://www.facebook.com" target="_blank">
 					<i class="fab fa-facebook fa-2x"></i>
 				</a>
-				<a href="http://www.twitter.com">
+				<a href="http://www.twitter.com" target="_blank">
 					<i class="fab fa-twitter fa-2x"></i>
 				</a>
-				<a href="http://www.Instagram.com">
+				<a href="http://www.Instagram.com" target="_blank">
 					<i class="fab fa-instagram fa-2x"></i>
 				</a>
 			</div>
@@ -420,7 +442,6 @@
 						<div class="botonSuscribite">
 							<button type="button" name="Suscribite" id="btnSuscribite" onclick="suscribite()">Suscribite</button>
 						</div>
-
 					</form>
 			</div>
 		</div>

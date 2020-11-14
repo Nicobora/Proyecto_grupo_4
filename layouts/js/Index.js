@@ -21,7 +21,7 @@
 
 			alert("¡Listo! Te enviamos un email a " + email);
 		}
-	}
+	};
 
 /*MOSTRAR CARTEL AL SUSCRIBIRSE*/
 
@@ -41,7 +41,7 @@
 			document.getElementById("graciasPorSuscribirte").style.display = 'inline-block';
 
 		}
-	}
+	};
 
 /*MOSTRAR EL INPUT BUSCADOR*/
 
@@ -49,4 +49,27 @@
 
 		document.getElementById("inputBuscador").style.display = 'inline-block';
 
-	}
+	};
+
+/*DESPLEGAR MENU CATEGORIAS*/
+
+	function desplegar(id){
+		
+		var div = document.getElementById("categoriasResponsive");
+			
+		if(!div) {
+			
+		return true;
+		}
+
+		if (div.style.display == "none") {
+			
+			div.style.display = "inline-block";
+
+		} else {
+			
+			div.style.display = "none";
+		};
+		
+		return true;
+};
