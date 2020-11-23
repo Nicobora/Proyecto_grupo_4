@@ -326,7 +326,6 @@ flex-direction: row;
 .divEnvio label {
   margin: 0;
   padding-left: 10px;
-  flex-direction: row;
 }
 
 .divEnvio p {
