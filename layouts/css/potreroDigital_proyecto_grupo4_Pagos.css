@@ -291,7 +291,8 @@ top: 1em;
 
 /*div oculto*/
 
-.tarjetaOculto{
+#tarjetaOculto{
+  display: none;
   width: 80%;
   align-self: center;
   margin: 10px 0;
@@ -375,7 +376,8 @@ top: 1em;
   padding-left: 10px;
 }
 
-.rapiOculto {
+#rapiOculto {
+  display: none;
   margin: 20px;
   padding: 10px 0;
   align-self: center;
@@ -383,7 +385,7 @@ top: 1em;
   width: 80%;
 }
 
-.rapiOculto p {
+#rapiOculto p {
   text-align: center;
   margin: 0;
   font-size: 14px;
@@ -417,7 +419,8 @@ top: 1em;
   padding-left: 10px;
 }
 
-.convenirOculto {
+#convenirOculto {
+  display: none;
   margin: 20px;
   padding: 10px 0;
   align-self: center;
@@ -425,7 +428,7 @@ top: 1em;
   width: 80%;
 }
 
-.convenirOculto p {
+#convenirOculto p {
   text-align: center;
   margin: 0;
   font-size: 14px;
@@ -435,8 +438,9 @@ top: 1em;
 
 .botones {
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 60%;
+  margin-top: 15px;
 }
 
 .botones div{
